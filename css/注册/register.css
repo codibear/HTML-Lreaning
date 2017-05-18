@@ -1,0 +1,55 @@
+#box{width: 1340px; height: 628px; background: #F9F9F9;margin: auto auto;}
+#body{width: 680px; height: 460px;  margin: 0 auto;}
+#foot{width: 450px; height: 45px; margin: 0 auto;margin-top: 120px; font-size:12px ;}
+#foot-up{ height: 20px; width: 500px;  margin:0 auto;margin-left: 70px; color: #333333;}
+#foot-down{ height: 20px;width: 550px;  float: left; margin-left: 40px; color: #9D9D9D;}
+#body-up{ height: 100px;  }
+#body-cen{ width: 680px; height: 450px; background:#FFFFFF; }
+#cen-up{width: 600px; height: 50px; }
+#cen-up-left{width: 300px; height: 50px; float: left;}
+#cen-up-right{width:500px; height: 24px; float:right;}
+#cen-up-logo{width: 134px; height: 50px;float: left;  }
+#logo{width: 50px; height: 50px; padding-left: 15px; }
+#cen-cen{ width: 680px;}
+table{  width: 500px; height: 300px; margin: 0 auto; margin-left: 100px; text-align: center;}
+#td-1{ width: 50px;}
+#td1{ font-size: 25px;text-align: center; width: 350px; height: 70px;}
+.th-1{height: 50px;}
+select{width: 315px; height: 35px; font-size: 12px; float: left; margin-left: 10px; padding-left: 15px; margin-right: 10px;}
+#phone{width:300px;height: 30px; font-size: 12px; padding-left: 10px; float: left; margin-left: 10px;}
+#inputCode{width:300px ;height: 30px; font-size: 12px; padding-left: 10px; float: left; margin-left: 10px;}
+#btn1{background: #FF6700; width: 320px; height: 32px; color: white; margin-left: -18px;}
+#agreement{ font-size: 7px; width: 310px;  margin: 0 auto; color:#9D9D9D; text-align: left;}
+li{ list-style: none ; float: left; margin-left: 15px;}
+span{clear: both;  color: red; font-size: 12px;}
+#code1{height: 35px; }
+.user{ font: normal bold 7px "宋体"; text-decoration: none; color:#333333; }
+#police{ text-decoration: none; color: #9D9D9D;}
+/*验证码css*/
+
+	    .code{background:url(code_bg.jpg);
+	            font-family:Arial;
+	            font-style:italic;
+	             color:blue;
+	             font-size:15px;
+	             border: solid 1px;
+	             padding-left: 20px;
+	             letter-spacing:15px;
+	             font-weight:bolder;             
+	             float:left;  
+	              cursor:pointer;
+	             width:140px;
+	             height:20px;
+	             line-height:20px;
+	             margin-left: 10px;
+	             vertical-align:middle;}
+	    a{
+	        text-decoration:none;
+	        font-size:12px;
+	        color:#288bc4;
+	       
+	        }
+	    a:hover{
+	       text-decoration:underline;
+	        }
+	    

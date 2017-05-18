@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>订单管理</title>
+		<style type="text/css">
+			a.silver{text-decoration: none;color: silver;}
+			#container{width: 1000px;height: 460px;background: white;margin: 0px auto;}
+			#header{width:1000px ;height: 150px;border: solid whitesmoke 10px;}
+			#head-up{width: 1000px;height: 60px;}
+			#header-list{width: 1000px;height: 50px;margin: 0px 0px;}
+			#main{width: 1000px;height: 300px;background: whitesmoke;border-top: solid whitesmoke 10px;border: solid whitesmoke 10px;}
+			
+			
+			
+			
+			#spanTitle{font-size: 25px;float: left;padding: 20px;color: black;}
+			#spanDecro{font-size: 10px ; float: left;color: silver;margin-top: 30px;}
+			.ul-none{list-style: none;padding: 0px 0px;}
+			.head-li{float: left;margin: 10px 30px;}
+			.head-btn{font-size: 15px;color: silver;border: none;background: rgba(255,255,255,0);}
+			#search{float: right;height: 50px;border: silver 1px solid;}
+			#sumbit{border: 1px silver solid;width: 50px;color: #FF6700;float: right;height: 50px;margin-right: 50px;background: rgba(0,0,0,0);}
+			#notSend{color: #FF6700;}
+			
+			#notSend-table{width: 1000px;}
+			#tr11{background: #FF6700;color: white;}
+			#manage1{z-index: 4;position: absolute;height: 300px;width: auto;background: whitesmoke;}
+			#manage2{z-index: 3;display: none;position: absolute;height: 300px;width: auto;background: whitesmoke;}
+			#manage3{z-index: 2;display: none;position: absolute;height: 300px;width: auto;background: whitesmoke;}
+			#manage4{z-index: 1;display: none;position: absolute;height: 300px;width: auto;background: whitesmoke;}
+			.touch{border: 1px silver solid;width: auto;color: #FF6700;background: rgba(0,0,0,0);}
+			
+			
+			td{text-align: center;}
+		</style>
+		<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+		<script type="text/javascript">
+			//标题列表点击变色
+		
+			$(function(){
+				
+				$("#notSend").click(function(){
+					$(".head-btn").css("color","silver");
+					$("#notSend").css("color","#FF6700");		
+				});
+				$("#notSend").mouseover(function(){
+					$("#notSend").css("cursor","pointer");
+				});
+			});
+			$(function(){
+				$("#notReceive").click(function(){
+					$(".head-btn").css("color","silver");
+					$("#notReceive").css("color","#FF6700");
+					
+				});
+				$("#notReceive").mouseover(function(){
+					$("#notReceive").css("cursor","pointer");
+				});
+			});
+			$(function(){
+				$("#finished").click(function(){
+					$(".head-btn").css("color","silver");
+					$("#finished").css("color","#FF6700");
+					
+				});
+				$("#finished").mouseover(function(){
+					$("#finished").css("cursor","pointer");
+				});
+			});
+			$(function(){
+				$("#application").click(function(){
+					$(".head-btn").css("color","silver");
+					$("#application").css("color","#FF6700");
+					
+				});
+				$("#application").mouseover(function(){
+					$("#application").css("cursor","pointer");
+				});
+			});
+			//提交按钮
+			$(function(){
+				$("#sumbit").mouseover(function(){
+					$("#search").css("border","#FF6700 2px solid");
+					$("#sumbit").css("color","white");
+					$("#sumbit").css("background","#FF6700");
+					$("#sumbit").css("border","white");
+				});
+				$("#sumbit").mouseout(function(){
+					$("#search").css("border","silver 1px solid");
+					$("#sumbit").css("color","#FF6700");
+					$("#sumbit").css("background","rgba(0,0,0,0)");
+					$("#sumbit").css("border","silver 1px solid");
+					
+				});
+			});
+			//完成
+			
+			$(function(){
+				$("#finishedBtn1").click(function(){
+					$("#finished-tr1").remove();					
+				});
+			});
+			$(function(){
+				$("#finishedBtn2").click(function(){
+					$("#finished-tr2").remove();					
+				});
+			});
+			
+			//页面切换
+			$(function(){
+				$("#notSend").click(function(){
+					$(".hideDiv").css("display","none");
+					$("#manage1").css("display","block");
+				});
+			});
+			$(function(){
+				$("#notReceive").click(function(){
+					$(".hideDiv").css("display","none");
+					$("#manage2").css("display","block");
+				});
+			});
+			$(function(){
+				$("#finished").click(function(){
+					$(".hideDiv").css("display","none");
+					$("#manage3").css("display","block");
+				});
+			});
+			$(function(){
+				$("#application").click(function(){
+					$(".hideDiv").css("display","none");
+					$("#manage4").css("display","block");
+				});
+			});
+			// touch
+			$(function(){
+				$("#do1").click(function(){
+					$("#ftr1").remove();					
+				});
+			});$(function(){
+				$("#do2").click(function(){
+					$("#ftr2").remove();					
+				});
+			});
+		</script>
+		
+	</head>
+	<body>
+		<div id="container">
+			<div id="header">
+				<div id="head-up">
+					<span id="spanTitle">订单管理</span>
+				<span id="spanDecro">请谨防钓鱼网站和诈骗电话，<a href="#" class="silver">了解更多></a></span>
+				</div>
+				
+				<div id="header-list">
+					
+					<ul class="ul-none">
+						
+					<li class="head-li"><input type="button" class="head-btn" id="notSend" value="待发货"/></li>
+					<li class="head-li"><input type="button" class="head-btn" id="notReceive" value="顾客待收货"/></li>
+					<li class="head-li"><input type="button" class="head-btn" id="finished" value="已完成"/></li>
+					<li class="head-li"><input type="button" class="head-btn" id="application" value="售后申请"/></li>
+					</ul>
+				<form>
+					<input type="submit" id="sumbit" value="查询" name="sumbit"/>
+					<input type="search" id="search" name="search"/>				
+				</form>
+				</div>
+			
+			</div>
+			<div id="main">
+				<div class="hideDiv" id="manage1">
+					<table id="notSend-table"width="" align="center" border="1px"bordercolordark="none"bordercolor="#FF6600"cellspacing="0px" >
+						<caption>待发货</caption>
+						<tr id="tr11">
+							<td>序号</td>
+							<td>订单号</td>
+							<td>目的地</td>
+							<td>商品名称</td>
+							<td>个数</td>
+							<td>总计(￥)</td>
+							<td>状态</td>
+						</tr>
+						<tr id="finished-tr1">
+							<td>1</td>
+							<td>XXXXXXXXX</td>
+							<td>唐山</td>
+							<td>小米5s</td>
+							<td>1</td>
+							<td>1999</td>
+							<td><input type="button"class="touch" value="已下单" id="finishedBtn1"/></td>
+						</tr>
+						<tr id="finished-tr2">
+							<td>2</td>
+							<td>XXXXXXXXX</td>
+							<td>承德</td>
+							<td>小米净水机</td>
+							<td>2</td>
+							<td>3998</td>
+							<td><input type="button"class="touch" value="已下单" id="finishedBtn2"/></td>
+						</tr>
+					</table>					
+				</div>
+				<div class="hideDiv"  id="manage2">
+					<table id="notSend-table"width="" align="center" border="1px"bordercolordark="none"bordercolor="#FF6600"cellspacing="0px" >
+						<caption>顾客待收货</caption>
+						<tr id="tr11">
+							<td>序号</td>
+							<td>订单号</td>
+							<td>目的地</td>
+							<td>已到地点</td>
+							<td>商品名称</td>
+							<td>个数</td>
+							<td>总计(￥)</td>
+							
+						</tr>
+						<tr id="finished-tr1">
+							<td>1</td>
+							<td>XXXXXXXXX</td>
+							<td>北京</td>
+							<td>深圳周转中心</td>
+							<td>小米运动蓝牙耳机</td>
+							<td>2</td>
+							<td>298</td>
+							
+						</tr>
+						<tr id="finished-tr2">
+							<td>2</td>
+							<td>XXXXXXXXX</td>
+							<td>上海</td>
+							<td>广东中转站</td>
+							<td>九号平衡车</td>
+							<td>1</td>
+							<td>1999</td>
+							
+						</tr>
+					</table>			
+					
+				</div>
+				
+				<div class="hideDiv"  id="manage3">
+					<table id="notSend-table"width="" align="center" border="1px"bordercolordark="none"bordercolor="#FF6600"cellspacing="0px" >
+						<caption>已完成</caption>
+						<tr id="tr11">
+							<td>序号</td>
+							<td>订单号</td>
+							<td>目的地</td>
+						
+							<td>商品名称</td>
+							<td>个数</td>
+							<td>总计(￥)</td>
+							
+						</tr>
+						<tr id="finished-tr1">
+							<td>1</td>
+							<td>XXXXXXXXX</td>
+							<td>天津</td>
+							
+							<td>小米5s</td>
+							<td>1</td>
+							<td>1999</td>
+							
+						</tr>
+						<tr id="finished-tr2">
+							<td>2</td>
+							<td>XXXXXXXXX</td>
+							<td>哈尔滨</td>
+						
+							<td>小米笔记本Air&nbsp;13.3英寸</td>
+							<td>1</td>
+							<td>4998</td>
+							
+						</tr>
+					</table>		
+				</div>
+				<div class="hideDiv"  id="manage4">
+					<table id="notSend-table"width="" align="center" border="1px"bordercolordark="none" bordercolor="#FF6600"cellspacing="0px">
+						<caption>售后申请</caption>
+						<tr id="tr11">
+							<td>序号</td>
+							<td>订单号</td>
+							<td>目的地</td>
+							
+							<td>商品名称</td>
+							<td>个数</td>
+							<td>总计(￥)</td>
+							<td>受理</td>
+							<td>联系顾客</td>
+							
+						</tr>
+						<tr id="ftr1">
+							<td>1</td>
+							<td>XXXXXXXXX</td>
+							<td>吉林</td>						
+							<td>小米5s&nbsp;Plus</td>
+							<td>1</td>
+							<td>2299</td>
+							<td><input type="button"class="touch" value="已受理" id="do1"/></td>
+							<td><input type="button"class="touch" value="联系顾客" id="link1"/></td>
+						</tr>
+						<tr id="ftr2">
+							<td>2</td>
+							<td>XXXXXXXXX</td>
+							<td>贵阳</td>	
+							<td>小米净水机</td>
+							<td>2</td>
+							<td>3998</td>
+							<td><input type="button"class="touch" value="已受理" id="do2"/></td>
+							<td><input type="button"class="touch" value="联系顾客" id="link2"/></td>
+							
+						</tr>
+					</table>		
+				</div>
+			</div>
+			
+			
+			
+		</div>
+		
+	</body>
+</html>

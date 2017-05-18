@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>小米账号 - 注册</title>  <link rel="icon" href="../img/log.png">
+		<link rel="stylesheet" type="text/css" href="../css/注册/register.css"/>
+		<script type="text/javascript" src="../js/jquery-1.11.3.js"></script>
+		<script type="text/javascript" src="../js/注册/register.js">	</script>
+
+	</head>
+	<body onload="createCode()">
+		<div id="box">
+			<div id="body">
+				<div id="body-up">
+				</div>
+				<div id="body-cen">
+					<div id="cen-up">
+						<div id="cen-up-left"></div>
+						<div id="cen-up-logo">
+							<img id="logo" src="../img/log.png"/>
+						</div>
+						<div id="cen-up-right">
+						</div>
+					</div>
+					<div id="cen-cen">
+						<form method="post" action="#" name="form1" id="form1">
+							<table > 
+								<tr >
+									<td id="td-1" class="th-1"> </td>
+									<td id="td1" >
+										注册小米帐号
+									</td>	
+									<td></td>
+								</tr>
+								<tr>
+									<td></td>
+									<th  class="th-1">	
+										<select >
+											<optgroup label="常用"></optgroup>
+											<option  value="中国" >中国（+86）</option>
+											<option value="中国台湾">中国台湾（+886）</option>
+											<option value="中国香港">中国香港（+852）</option>
+											<optgroup label="A"></optgroup>
+											<option  value="Andorra">Andorra</option>
+											<option value="Afghanistan">Afghanistan</option>
+										</select>
+									</th>	
+									<td></td>
+								</tr>
+								<tr>
+									<td></td>
+									<th class="th-1"><input type="text" name="phone" id="phone" value="请输入手机号" />	
+									</th>	
+									<td><span id="span1"></span></td>
+														
+								</tr>
+								
+								<tr>
+									<td></td>
+									<th class="th-1" > 
+										<input  type="text" id="inputCode" onblur="validateCode();" value="请输入验证码"/>
+									</th>
+									<td><span id="codespan" ></span></td>
+								</tr>
+								
+								<tr>
+									<td></td>
+									<td id="code1"><div class="code" id="checkCode" onclick="createCode()" ></div><div><a  href="#" onclick="createCode()">看不清换一张</a></div></td>
+									<td ></td>
+								</tr>
+								<tr>
+									<td></td>
+									<th >
+										<input type="button" name="btn1" id="btn1"  value="立即注册" />
+									</th>
+									<td></td>
+								</tr>
+								
+								<tr>
+									<td></td>
+									<td>
+										<div id="agreement">点击“立即注册”，即表示您同意并愿意遵守小米 <a class="user" href="#" target="_blank">用户协议 </a>和 <a class="user" href="#" target="_blank">隐私政策</a></div>
+									</td>	
+									<td></td>
+								</tr>
+							</table>	
+						</form>
+					</div>
+				</div>		
+			</div>
+			<div id="foot">
+				<div id="foot-up">
+					<ul >
+						<li id="li1">简体&nbsp;&nbsp;|</li>
+						
+						<li>繁体</li>
+						<li>|</li>
+						<li>English</li>
+						<li>|</li>
+						<li>常见问题</li>		
+					</ul>
+				</div>
+				<div id="foot-down" >
+					小米公司版权所有-京ICP备10046444-
+					<a  id="police" href="#" target="_blank" >
+						<img src="../img/ghs.png"/>11010802020134号-京ICP证110507号
+					</a>
+				</div>
+			</div>
+		</div>	
+	</body>
+</html>

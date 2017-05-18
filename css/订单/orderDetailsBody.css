@@ -1,0 +1,38 @@
+			/*总体盒子*/	
+		#detailBox{ width: 1226px; height: 1000px;}	
+		#orderBox{ height: 80px;}
+		/*第一块订单号*/
+		#order-1{  width: 1260px; height: 60px; padding-left: 30px;  padding-right: 40px;}
+		#number{  width: 500px; height: 40px;  font: 22px "细黑体";}
+		.order-hr{ color: #999999; width: 1260px;}
+		/* 第二块时间*/
+		#order-2{  width: 1260px; height: 320px; padding-left: 30px; }
+		#order-2-up{width: 1260px; height: 320px; margin:0 auto;}
+		#order-2-wait{ font:25px "新宋体" ; color: #FF6700; line-height: 55px;}
+		#order-2-finish{ font: "新宋体" 20px; color: #FF6700; line-height: 25px;}
+		#progress{ width: 1260px; height: 25px; background: #83C44E; color: white; border-radius: 25px; margin-top: 20px;}
+		.progress-span1{margin-left: 180px; font-size: 20px;}
+		#progress-span1{margin-left:120px;}
+		#progress-time{ width:1260px; height: 30px;  margin-top:15px; line-height: 20px;}
+		.progress-span2{margin-left: 120px;  font-size: 16px; color: #999999;}
+		#progress-span2{ margin-left: 70px;}
+		#plan{margin-top: 20px;  font-size: 20px;}
+		#plan-span1{ margin-right: 350px; margin-left: 35px;}
+		/*第三块收货信息*/
+		.order3-5{ width: 1260px; height: 210px; margin-left: 30px;}
+		.tittle{ font: 25px "新宋体"; line-height: 35px;  }
+		.alter-1{  width: 180px; height: 35px;  background: none; border: solid 1px #5B5C5E; float: right; margin-right: 140px;}
+		.order-table1{  width: 1000px;  color: #999999; font: 16px "新宋体"; line-height: 30px;}
+		.table1-td1{ width: 120px;}
+		/*第四块支付方式  类似三块*/
+		#order-4{ width: 1260px; height: 275px; margin-left: 30px;}
+		.sf{ color: #999999; text-decoration: none;}
+		/* 第五块发票 类似三块*/
+		/*第六块价格*/
+		#order-6{width: 1260px; height: 210px; margin-left: 40px; }
+		.order-table2{font: 16px "新宋体"; float: right; margin-right: 140px;  width: 500px;  line-height: 36px;}
+		.table2-td1{  color: #FF6700; text-align: right;}
+		.table2-td2{ font-size:30px;color: #FF6700;  text-align: right; line-height: 40px;}
+		/*返回首页*/
+		#return-1{ float:right; position: fixed; top: 20px ; right: 50px;}
+		#return-a{   color: #FF6700; text-decoration: none;}

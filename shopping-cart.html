@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>我的购物车-小米商城</title>
+		<link rel="icon" href="img/logo.png"/>
+		<link rel="stylesheet" href="css/shopping-cart.css" />
+		<script type="text/javascript" src="js/jquery-1.11.3.js" ></script>
+		<script type="text/javascript" src="js/shopping-cart.js" ></script>
+	</head>
+	<body>
+		<div id="total">
+			<div id="header">
+				<img id="top-logo" src="img/logo.png"/>
+				<p>我的购物车&nbsp;<span id="span-top1">温馨提示：产品是否购买成功，以最终下单为准哦，请尽快结算</span></p>
+				<div id="top-right">
+					<div id="link0" class="link">我的账号∨</div>
+					<div id="hidelist">
+						<div onclick="link1()" id="link1" class="link">个人中心</div><br />
+						<div onclick="link2()" id="link2" class="link">评价晒单</div><br />
+						<div onclick="link3()" id="link3" class="link">我的喜欢</div><br />
+						<div onclick="link4()" id="link4" class="link">小米账户</div><br />
+						<div onclick="link5()" id="link5" class="link">退出登录</div>
+					</div>
+					&nbsp;<span id="span-top2" onclick="order()">我的订单</span>
+				</div>
+			</div>
+			<div id="main">
+				<div id="main1">
+					<div id="main1-top">
+						<input type="checkbox" value="全选" id="cb0" onclick="ch()" />
+						<span id="cb0-span" >全选</span>
+						<span id="cb0-span1">商品名称</span>
+						<span id="cb0-span2">单价</span>
+						<span id="cb0-span3">数量</span>
+						<span id="cb0-span4">小计</span>
+						<span id="cb0-span5">操作</span>
+					</div>
+					<hr id="hr1" />
+					<div id="main1-list1">
+						<input type="checkbox" value="商品一" id="cb1" class="checkbox" name="checkbox1" onclick="ch1()"/>
+						<img src="img/3-00.png" id="main1-list-img1"/>
+						<span id="main1-list-span1">小米圈铁耳机  金色</span>
+						<span id="main1-list-span11">95元</span>
+						<input type="button" value="-" id="numsub1" onclick="subNum1()"/>
+						<input type="text" id="num1" value="1"/>
+						<input type="button" value="+" id="numadd1" onclick="addNum1()"/>
+						<input type="text" id="pay1" value="95" readonly="readonly"/>
+						<div id="dele1" onclick="delet1()">×</div>
+						
+					</div>
+					<hr id="hr2" />
+					<div id="main1-list2">
+						<input type="checkbox" value="商品二" id="cb2" class="checkbox" name="checkbox1" onclick="ch1()"/>
+						<img src="img/3-01.png" id="main1-list-img2"/>
+						<span id="main1-list-span2">小米5c  移动版  3GB内存  玫瑰金  64GB</span>
+						<span id="main1-list-span22">1499元</span>
+						<input type="button" value="-" id="numsub2" onclick="subNum2()"/>
+						<input type="text" id="num2" value="1"/>
+						<input type="button" value="+" id="numadd2" onclick="addNum2()"/>
+						<input type="text" id="pay2" value="1499" readonly="readonly"/>
+						<div id="dele2" onclick="delet2()">×</div>
+					</div>
+					<hr id="hr3" />
+					<div id="main1-list3">
+						<input type="checkbox" value="商品三" id="cb3" class="checkbox" name="checkbox1" onclick="ch1()"/>
+						<img src="img/3-02.png" id="main1-list-img3"/>
+						<span id="main1-list-span3">小米笔记本Air13.3英寸尊享版  银色</span>
+						<span id="main1-list-span33">5999元</span>
+						<input type="button" value="-" id="numsub3" onclick="subNum3()"/>
+						<input type="text" id="num3" value="1"/>
+						<input type="button" value="+" id="numadd3" onclick="addNum3()"/>
+						<input type="text" id="pay3" value="5999" readonly="readonly"/>
+						<div id="dele3" onclick="delet3()">×</div>
+					</div>
+					<hr id="hr4" />
+					<div id="main1-list4">
+						<input type="checkbox" value="商品四" id="cb4" class="checkbox" name="checkbox1" onclick="ch1()"/>
+						<img src="img/3-03.png" id="main1-list-img4"/>
+						<span id="main1-list-span4">小米电视3S  曲面  65英寸</span>
+						<span id="main1-list-span44">8999元</span>
+						<input type="button" value="-" id="numsub4" onclick="subNum4()"/>
+						<input type="text" id="num4" value="1"/>
+						<input type="button" value="+" id="numadd4" onclick="addNum4()"/>
+						<input type="text" id="pay4" value="8999" readonly="readonly"/>
+						<div id="dele4" onclick="delet4()">×</div>
+					</div>
+				</div>
+				<div id="main2">
+					<span id="main2-span1">继续购物</span>
+					<span id="main2-span2">已选择</span>
+					<input type="text" id="choose" value="0" readonly="readonly" />
+					<span id="main2-span3">件</span>
+					<span id="main2-span4">合计（不含运费）：	</span>	
+					<input type="text" id="allprice" value="0.00" readonly="readonly" />
+					<span id="main2-span5">元</span>
+					<div id="payall" >去结算</div>
+				</div>
+				
+				<div id="main3">
+					
+				</div>
+			</div>
+				
+				
+			</div>
+			<div id="foot">
+				
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,69 @@
+			#total{width: 100%;height: 3000px;background: #F5F5F5;}
+			#header{width: 100%;height: 100px;background: white;border-bottom:solid 2px #FF6700;}
+			#top-logo{margin-top: 15px;margin-left: 40px;float: left;}
+			p{font-size: 30px;float: left;padding: 20px;margin-top: 5px;display: inline;}
+			#span-top1{font-size: 14px;color: #757575;}
+			#top-right{float: right;margin-right: 70px;margin-top: 40px;width: 140px; font-size: 14px;color: #757575;}
+			#link0{float: left; width: 70px;height: 20px;font-size: 14px;color: #757575;}
+			#hidelist{display:none;width: 70px;position: absolute;margin-top: 20px;background: white;}
+			#span-top2{font-size: 14px;color: #757575;}
+			#main{width: 90%;height: 1500px;margin: 40px auto; background: #F5F5F5;}
+			#main1{width: 100%;height: 610px; background: white;}
+			#main1-top{width: 100%;height: 70px;}
+			#main1-list1{width: 100%;height: 120px;}
+			#main1-list2{width: 100%;height: 120px;}
+			#main1-list3{width: 100%;height: 120px;}
+			#main1-list4{width: 100%;height: 120px;}
+			#cb0{width: 20px;height: 20px;margin-top: 30px;margin-left: 30px;float: left;}
+			#cb0-span{margin-top: 23px;float: left;padding: 10px;}
+			#cb0-span1{width: 80px; height: 40px; float: left;margin-top: 34px;margin-left: 120px;}
+			#cb0-span2{width: 80px; height: 40px;float: left;margin-top: 34px;margin-left: 300px;}
+			#cb0-span3{width: 80px; height: 40px;float: left;margin-top: 34px;margin-left: 100px;}
+			#cb0-span4{width: 80px; height: 40px;float: left;margin-top: 34px;margin-left: 100px;}
+			#cb0-span5{width: 80px; height: 40px;float: left;margin-top: 34px;margin-left: 50px;}
+			.checkbox{width: 20px;height: 20px;margin-top: 50px;margin-left: 30px;float: left;}
+			#main1-list-img1{float: left;margin-left: 60px;margin-top: 20px;}
+			#main1-list-img2{float: left;margin-left: 60px;margin-top: 20px;}
+			#main1-list-img3{float: left;margin-left: 60px;margin-top: 20px;}
+			#main1-list-img4{float: left;margin-left: 60px;margin-top: 20px;}
+			#main1-list-span1{float: left;margin-left: 30px;margin-top: 50px;}
+			#main1-list-span2{float: left;margin-left: 30px;margin-top: 50px;}
+			#main1-list-span3{float: left;margin-left: 30px;margin-top: 50px;}
+			#main1-list-span4{float: left;margin-left: 30px;margin-top: 50px;}
+			#main1-list-span11{float: left;margin-left: 235px;margin-top: 50px;}
+			#main1-list-span22{float: left;margin-left: 100px;margin-top: 50px;}
+			#main1-list-span33{float: left;margin-left: 115px;margin-top: 50px;}
+			#main1-list-span44{float: left;margin-left: 190px;margin-top: 50px;}
+			#numsub1{margin-top: 50px;margin-left: 110px;float: left;}
+			#num1{width: 60px;text-align: center;margin-top: 50px;float: left;}
+			#numadd1{margin-top: 50px;float: left;}
+			#numsub2{margin-top: 50px;margin-left: 103px;float: left;}
+			#num2{width: 60px;text-align: center;margin-top: 50px;float: left;}
+			#numadd2{margin-top: 50px;float: left;}
+			#numsub3{margin-top: 50px;margin-left: 99px;float: left;}
+			#num3{width: 60px;text-align: center;margin-top: 50px;float: left;}
+			#numadd3{margin-top: 50px;float: left;}
+			#numsub4{margin-top: 50px;margin-left: 100px;float: left;}
+			#num4{width: 60px;text-align: center;margin-top: 50px;float: left;}
+			#numadd4{margin-top: 50px;float: left;}
+			#pay1{color: #FF6700;margin-top: 50px;margin-left: 120px;width: 50px;border-style: none;float: left;}
+			#pay2{color: #FF6700;margin-top: 50px;margin-left: 110px;width: 50px;border-style: none;float: left;}
+			#pay3{color: #FF6700;margin-top: 50px;margin-left: 110px;width: 50px;border-style: none;float: left;}
+			#pay4{color: #FF6700;margin-top: 50px;margin-left: 110px;width: 50px;border-style: none;float: left;}
+			#dele1{float: left;color: #757575;margin-top: 50px;margin-left: 70px;width: 25px;height: 25px;background: white;font-size: 20px;line-height: 25px;text-align: center;border-radius: 25px; }
+			#dele2{float: left;color: #757575;margin-top: 50px;margin-left: 75px;width: 25px;height: 25px;background: white;font-size: 20px;line-height: 25px;text-align: center;border-radius: 25px; }
+			#dele3{float: left;color: #757575;margin-top: 50px;margin-left: 75px;width: 25px;height: 25px;background: white;font-size: 20px;line-height: 25px;text-align: center;border-radius: 25px; }
+			#dele4{float: left;color: #757575;margin-top: 50px;margin-left: 75px;width: 25px;height: 25px;background: white;font-size: 20px;line-height: 25px;text-align: center;border-radius: 25px; }
+			#main2{width: 100%;height: 50px;margin-top 20px; background: white;margin-top: 20px;}
+			#main2-span1{font-size: 16px;color: #757575;line-height: 50px;margin-left: 20px;float: left;}
+			#main2-span2{float: left;margin-left: 50px;margin-top: 15px;color: #757575;}
+			#choose{border-style: none;width: 30px;text-align: center;margin-top: 15px;float: left;color: #757575;}
+			#main2-span3{float: left;margin-top: 15px;color: #757575;}
+			#main2-span4{float: left;margin-top: 15px;color: #FF6700;margin-left: 300px;}
+			#allprice{float: left;margin-top: 5px;color: #FF6700;border-style: none;width: 200px;font-size: 40px;}
+			#main2-span5{float: left;margin-top: 15px;color: #FF6700;margin-left: 0px;}
+			#payall{float: left;margin-left: 110px; width: 200px;height: 50px;background: #FF6700;text-align: center;line-height: 50px;color: white;font-size: 20px; font-family: "黑体";}
+			#main3{}
+			#foot{}
+			
+			

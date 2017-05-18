@@ -1,0 +1,15 @@
+/*米五商品导航*/
+#head-box{ width:1330px ; height: 70px;  box-shadow:0px 6px #E0E0E0; }
+#head1{ width: 350px; height: 23px; text-align: center;  float: left;}
+#lo1{ margin-left: 40px; float: left;}
+#head1-s1{  font: 28px "微软雅黑";line-height: 70px; }
+#head2{ width:1030px; height: 70px;  float: right; margin-top: 0px; }
+#head2-a1{ margin-left: 250px;}
+.head2-li1{ float: left; list-style: none; font: 16px "方正仿宋"; margin: 4px 6px;}
+.head2-a:link{color: black; text-decoration: none;}
+.head2-a:visited{color:black; text-decoration: none;}
+.head2-a:hover{color: orangered;}
+.head2-a:active{color:orangered;}
+.head2-li2{ float: left; list-style:none; margin: 4px 5px; text-align: center; color: #B3B3B3;}
+.div1{ width: 1260px; height:560px;  margin-top: 0px;}
+#buy{ background: #FF6700; color:white; border: none;width: 120px; height: 30px; position: relative; bottom: 5px; cursor:pointer;}

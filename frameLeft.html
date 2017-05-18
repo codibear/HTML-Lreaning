@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#frameLeft{height: 350px;width: 180px;margin:0px auto;background: white;border-top: solid whitesmoke 10px;}
+			.ul-none{list-style: none;margin: 0px auto;padding: 0px;}
+			.frame-li1{float: left;margin: 10px 50px;clear: both;}
+			#frameLeftMain{height: 400px;width: 200px;background: whitesmoke;margin:0px auto;}
+			
+			a:link{text-decoration:none ;color: black;}
+			a:visited{color: black;}
+			a:hover{color: #FF6700;}
+			
+		</style>
+		<script type="text/javascript">
+			function ch(){
+				document.getElementsByClassName("frame-li1").style.color="#000000"
+				document.getElementById("leftid1").style.color="#FF6700";
+			}
+		</script>
+	</head>
+	<body>
+		<div id="frameLeftMain">		
+			<div id="frameLeft">
+				<ul class="ul-none">
+					<li class="frame-li1" style="margin-top:50px ;" ><a id="leftid1" href="orderManage.html" target="display" >订单管理</a></li>
+					<li class="frame-li1" ><a id="leftid2" href="商品管理/merchandiseControl.html" target="display" >商品管理</a></li>
+					<li class="frame-li1" ><a id="leftid3" href="service-user.html" target="display">用户管理</a></li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>

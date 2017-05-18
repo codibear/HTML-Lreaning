@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>小米手机/小米平板-小米商城</title>
+		<link rel="icon" href="img/logo.png"/>
+		<script type="text/javascript" src="js/jquery-1.11.3.js" ></script>
+		<link rel="stylesheet" href="css/phone-list.css" />
+		<script type="text/javascript" src="js/phone-list.js" ></script>
+		<!--<script type="text/javascript" src="js/myJs.js" ></script>-->
+		<style type="text/css">
+			#header-down-shopCar{margin-left: 20px;margin-top: 0px;float: right;width: 100px;height: 30px;background:url(img/购物车未点击.png) #424242;margin-right: 30px;}
+		</style>
+	</head>
+	<body>
+		<!--总体div-->
+		<div id="total">
+			<div id="top1">
+				<ul class="ulNavi">
+					<a href="#"><li class="li-header-navi">小米商城</li></a>
+					<a href="#"><li class="li-header-navi">MIUI</li></a>
+					<a href="#"><li class="li-header-navi">米聊</li></a>
+					<a href="#"><li class="li-header-navi">游戏</li></a>
+					<a href="#"><li class="li-header-navi">多看阅读</li></a>
+					<a href="service.html"><li class="li-header-navi">云服务</li></a>
+					<a href="#"><li class="li-header-navi">金融</li></a>
+				</ul>
+				<ul class="ulNavi"style="float: right;margin: auto 100px;">
+					<a href="#" class="a2"><li class="li-header-navi">登录</li></a>
+					<a href="#" class="a2"><li class="li-header-navi">注册</li></a>
+					<a href="#" class="a2"><li class="li-header-navi">消息通知</li></a>
+					
+					<!--购物车-->
+				<a href="shopping-cart.html">
+					<div id="header-down-shopCar">
+							
+					</div>
+				</a>
+				</ul>
+			</div>
+			<!--<div id="top2">-->
+				<!--最上排导航-->
+				<div id="navigation1">
+					<a href="index.html"><img src="img/MILOGO.png" align="center" style="margin-top: 0px;padding: 25px;width: 60px;height: 60px;"/></a>
+					
+					<div id="shopcar">
+						<p align="center"style="padding: 30px 0px;font-size: 5px;">购物车还没有商品，赶紧选购吧！</p>
+					</div>
+					<div id="navigation1-nav">
+						<ul class="ulNavi">
+							<a href="#"><li class="li-main-navigation" id="li1">小米手机</li></a>
+							<a href="#"><li class="li-main-navigation" id="li2">红米</li></a>
+							<a href="#"><li class="li-main-navigation" id="li3">平板·笔记本</li></a>
+							<a href="#"><li class="li-main-navigation" id="li4">电视</li></a>
+							<a href="#"><li class="li-main-navigation" id="li5">盒子·影音</li></a>
+							<a href="#"><li class="li-main-navigation">路由器</li></a>
+							<a href="#"><li class="li-main-navigation">智能硬件</li></a>
+							<a href="#"><li class="li-main-navigation">服务</li></a>
+							<a href="#"><li class="li-main-navigation">社区</li></a>
+						</ul>
+					</div>
+				</div>
+			<!--主体导航-->
+				<div id="navigation2">
+					<!--导航下滑栏-->
+					<div id="nav-slide-down1">
+						<a href="#"><img  src="img/导航下1-1.png"/></a>
+						<a href="#"><img  src="img/导航下1-2.png"/></a>
+						<a href="#"><img  src="img/导航下1-3.png"/></a>
+					</div>
+					<div id="nav-slide-down2">
+						<a href="#"><img  src="img/导航下2-1.png"/></a>
+						<a href="#"><img  src="img/导航下2-2.png"/></a>
+						<a href="#"><img  src="img/导航下2-3.png"/></a>
+					</div>
+					<div id="nav-slide-down3">
+						<a href="#"><img  src="img/导航下1-1.png"/></a>
+						<a href="#"><img  src="img/导航下1-1.png"/></a>
+						<a href="#"><img  src="img/导航下1-1.png"/></a>
+					</div>
+					<div id="nav-slide-down4">
+						<a href="#"><img  src="img/导航下2-1.png"/></a>
+						<a href="#"><img  src="img/导航下2-2.png"/></a>
+						<a href="#"><img  src="img/导航下2-3.png"/></a>
+					</div>
+					<div id="nav-slide-down5">
+						<a href="#"><img  src="img/导航下1-1.png"/></a>
+						<a href="#"><img  src="img/导航下1-1.png"/></a>
+						<a href="#"><img  src="img/导航下1-1.png"/></a>
+					</div>
+		<!--	</div>-->
+			<ul id="ultop">
+				<li id="li-top"><a href="#">首页</a>/选购手机·平板</li>
+			</ul>
+			<div id="main">
+				<div id="maintop">
+					<span id="mainspan1">选购手机·平板</span>
+					<ul id="ulmain">
+						<li class="ulmain-list1" id="ulmain-list1" onclick="click1()">小米手机5c</li>
+						<li class="ulmain-list1" id="ulmain-list2" onclick="click2()">小米MIX</li>
+						<li class="ulmain-list1" id="ulmain-list3" onclick="click3()">小米Note2</li>
+						<li class="ulmain-list1" id="ulmain-list4" onclick="click4()">小米5s</li>
+						<li class="ulmain-list1" id="ulmain-list5" onclick="click5()">小米5s Plus</li>
+						<li class="ulmain-list1" id="ulmain-list6" onclick="click6()">小米手机5</li>
+						<li class="ulmain-list1" id="ulmain-list7" onclick="click7()">手机对比</li>
+						<li id="ulmain-list8" onclick="click8()">查看全部></li>
+					</ul>
+					<img src="img/2-1.png" id="mainimg1" onclick="linkimg0()"/>
+				</div>
+				<div id="maindown">
+					<div id="maindown1">
+						<img id="link-img1" src="img/2-31.png" class="maindownimg" onclick="linkimg1()" />
+						<hr />
+						<div class="maindown-div">
+							<span class="maindownspan1">小米6</span>&nbsp;
+							<span class="maindownspan2">2499元起</span><br />
+							<span class="maindownspan3">骁龙853 旗舰处理器，6GB 大内存</span><br />
+							<span class="maindownspan3">5.15" 护眼屛，四曲面陶瓷/玻璃 </span>
+						</div>
+						<div class="mainbtn" id="mainbtn1" onclick="buy1()">
+							<span class="btnspan" id="btnspan1">立即购买</span>
+						</div>
+					</div>
+					<div id="maindown2">
+						<img id="link-img2" src="img/2-32.png" class="maindownimg" onclick="linkimg2()" />
+						<hr />
+						<div class="maindown-div">
+							<span class="maindownspan1">小米手机5c</span>&nbsp;
+							<span class="maindownspan2">1499元</span><br />
+							<span class="maindownspan3">澎湃S1，八核高性能处理器，金属一体化机身</span><br />
+							<span class="maindownspan3">"暗夜之眼"超感光相机，捕捉明亮动人时刻</span>
+						</div>
+						<div class="mainbtn" id="mainbtn2" onclick="buy2()">
+							<span class="btnspan" id="btnspan2">立即购买</span>
+						</div>
+					</div>
+					<div id="maindown3">
+						<img id="link-img3" src="img/2-33.png" class="maindownimg" onclick="linkimg3()" />
+						<hr />
+						<div class="maindown-div">
+							<span class="maindownspan1">红米4X</span>&nbsp;
+							<span class="maindownspan2">699元</span><br />
+							<span class="maindownspan3">4100mAh 超长续航，骁龙8核处理器</span><br />
+							<span class="maindownspan3">5"舒适单手握感，1300万像素高画质相机</span>
+						</div>
+						<div class="mainbtn" id="mainbtn3" onclick="buy3()">
+							<span class="btnspan" id="btnspan3">立即购买</span>
+						</div>
+					</div>
+					<div id="maindown4">
+						<img id="link-img4" src="img/2-34.png" class="maindownimg" onclick="linkimg4()" />
+						<hr />
+						<div class="maindown-div">
+							<span class="maindownspan1">红米Note 4X</span>&nbsp;
+							<span class="maindownspan2">999元起</span><br />
+							<span class="maindownspan3">骁龙 8 核处理器，4100mAh 超长续航</span><br />
+							<span class="maindownspan3">5.5" 全高清大屏，多彩金属机身</span>
+						</div>
+						<div class="mainbtn" id="mainbtn4" onclick="buy4()">
+							<span class="btnspan" id="btnspan4">立即购买</span>
+						</div>
+					</div>
+					<div id="maindown5">
+						<img id="link-img5" src="img/2-35.png" class="maindownimg" onclick="linkimg5()" />
+						<hr />
+						<div class="maindown-div">
+							<span class="maindownspan1">小米MIX</span>
+							<span class="maindownspan2">3499元起</span><br />
+							<span class="maindownspan3">6.4" 全面屏，全陶瓷机身，骁龙 821 性能版</span><br />
+							<span class="maindownspan3">4400mAh 大电量，可选128GB版/256GB版</span>
+						</div>
+						<div class="mainbtn" id="mainbtn5" onclick="buy5()">
+							<span class="btnspan" id="btnspan5">立即购买</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr id="endhr"/>
+		</div>
+		<div id="foot">
+				<div id="foot-up">
+					<ul class="ulNavi">
+							<a href="#"><li  class="bottom-li" >预约维修服务</li></a>
+							<a href="#"><li  class="bottom-li">7天无理由退货</li></a>
+							<a href="#"><li  class="bottom-li">15天免费换货</li></a>
+							<a href="#"><li  class="bottom-li">满150元包邮</li></a>
+							<a href="#"><li  class="bottom-li">520余家售后网点</li></a>
+						</ul>
+				</div>
+				<hr width="80%" />
+				<div id="foot-down">
+					<div id="foot-down-left">
+						<span class="span-show" style="float: left;margin-left: 50px;">帮助中心</span>
+						<span class="span-show" style="float: left;margin-left: 50px;">服务支持</span>
+						<span class="span-show" style="float: left;margin-left: 50px;">线下门店</span>
+						<span class="span-show" style="float: left;margin-left: 50px;">关于小米</span>
+						<span class="span-show" style="float: left;margin-left: 50px;">关注我们</span>
+						<span class="span-show" style="float: left;margin-left: 50px;">特色服务</span>
+						
+						<span class="span-show" style="clear: left;float: left;margin-left: 65px;font-size: 10px;">帐户管理</span>
+						<span class="span-show" style="float: left;margin-left: 65px;font-size: 10px;">售后政策</span>
+						<span class="span-show" style="float: left;margin-left: 65px;font-size: 10px;">小米之家</span>
+						<span class="span-show" style="float: left;margin-left: 65px;font-size: 10px;">小米生活</span>
+						<span class="span-show" style="float: left;margin-left: 65px;font-size: 10px;">了解小米</span>
+						<span class="span-show" style="float: left;margin-left: 65px;font-size: 10px;">新浪微博</span>
+						
+						<span class="span-show" style="clear: left;float: left;margin-left: 65px;font-size: 10px;">购物指南</span>
+						<span class="span-show" style="float: left;margin-left: 65px;font-size: 10px;">服务网点</span>
+						<span class="span-show" style="float: left;margin-left: 65px;font-size: 10px;">门下商店</span>
+						<span class="span-show" style="float: left;margin-left: 65px;font-size: 10px;">小米部落</span>
+						<span class="span-show" style="float: left;margin-left: 65px;font-size: 10px;">加入小米</span>
+						<span class="span-show" style="float: left;margin-left: 65px;font-size: 10px;">礼物吗</span>
+					</div>
+					<div id="foot-down-right">
+						<p style="font-size: 20px;color: #FF6700;text-align: center;line-height: 20px;">400-123-4567</p>
+						<p style="padding: 5px;font-size: 15px;color: black;text-align: center;line-height: 20px;">周一至周日 8:00-18:00 （仅收市话费）</p>
+						<input type="button" value="24小时在线客服" id="btn" width="30px" style="margin: 0px 60px;background: white;border: #FF6700 solid 1px;color: #FF6700;"/>
+					</div>
+				</div>
+				<img src="img/底部.png" width="100%"/>
+			</div>
+		</div>
+	</body>
+</html>

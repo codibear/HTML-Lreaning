@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-1.11.3.js" ></script>
+		<style type="text/css">
+			#container{width: 1020px;height: 1000px;margin: 0px auto;}
+			#head-up{width: 1020px;height: 60px;background:white;}
+			#span-top{font-size: 25px;float: left;padding: 20px;color: #757575;}
+			form{width: 400px;height: 700px;}
+			table{width: 400px;height: 500px;text-align: center;}
+		</style>
+		<style type="text/javascript">
+			
+		</style>
+		<script>
+			//点击保存和关闭，跳转页面
+//			$(function(){
+//				$("#btn1").click(function(){
+//					window.open("#");
+//				});
+//			});
+//			$(function(){
+//				$("#btn2").click(function(){
+//					window.open("#");
+//				});
+//			});
+		</script>
+	</head>
+	<body>
+		<div id="container">
+			<div id="head-up">
+				<span id="span-top">用户管理</span><br />
+			</div>
+			<form method="post" action="#">
+				<table cellspacing="0px" >
+					<tr>
+						<td>
+							角&nbsp;&nbsp;色：
+							<select style="width: 170px;">
+								<option value="--请选择--">--请选择--</option>
+								<option value="会员">会员</option>
+								<option value="管理员">管理员</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							账&nbsp;&nbsp;号：
+							<input type="text" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							手机号码：
+							<input type="text" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							会员类型：
+							<input type="text" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input id="btn1" type="button" value="保存" />
+							<input id="btn2" type="button" value="关闭" />
+						</td>
+					</tr>
+					
+				</table>
+			</form>
+		</div>
+	</body>
+</html>

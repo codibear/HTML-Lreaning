@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>MI</title><link rel="icon" href="img/log.png">
+		<script type="text/javascript">
+			function right1(){
+				document.getElementById("product1").style.display="none";
+				document.getElementById("product2").style.display="block";
+			}
+			function left1(){
+				document.getElementById("product1").style.display="block";
+				document.getElementById("product2").style.display="none";
+			}
+			
+		</script>
+		
+		<!--插件引入-->
+		<link rel="stylesheet" href="css/slide.css">
+
+		<script src="js/jquery.js"></script>
+		<script src="js/slide.js"></script>
+		
+		<!-- js -->
+		<script src="js/jquery-1.8.3.min.js"></script>
+		<script src="js/slide.js"></script>
+		<script>
+			$('.ck-slide').ckSlide({
+				dir: 'x'
+			});
+		</script>
+		<!---->
+		<script type="text/javascript" src="js/jquery-1.11.3.js" ></script>
+		<script type="text/javascript" src="js/myJs.js" ></script>
+		<script>
+			
+			
+			
+		</script>
+		<!-- css -->
+		<link rel="stylesheet" href="css/slide.css">
+		<style>
+			.ck-slide { width:1226px; height: 500px; margin: 0 auto;padding: 50px auto;}
+			.ck-slide ul.ck-slide-wrapper { height: 320px;}
+		</style>
+		<style type="text/css">
+			/*主要功能*/
+			a.a1.a2:link{text-decoration: none;color: #B0B0B0;}
+			a:link{text-decoration: none;color: saddlebrown;}
+			a:hover{color:white;}
+			a.a1:hover{color:salmon;}
+			a.a2:hover{color:salmon;}
+			#container{width: 100%;height: 2470px;background: white;}
+			#main{width: 1226px;height: 2000px;background: #F5F5F5;margin: auto auto;}
+			#header{width: 100%;height: 150px;background: #ECDAC6;}
+			#foot{margin: auto auto;width: 1226px;height: 300px;background: white;}
+			#header-up{margin:0px auto;width: 100%;height: 120px;background: #ECDAC6;background: url(img/顶部广告.png) no-repeat;background-position: 50% 0px;}
+			#header-down{width: 100%;height: 30px;background: #333333;float:left;}
+			
+			#navigation1{width: 100%;height: 100px;background: white;box-shadow: 0px 0px 5px  darkgray;}
+			#navigation1-nav{position: absolute;background: white;display: inline;height: 100px;width: 55%;float: right;margin-right: 10px;}
+			#nav-slide-down1{display: none;background: white;z-index: 6;position: absolute;width: 1226px;height: 230px;}
+			#nav-slide-down2{display: none;z-index: 6;position: absolute;width: 1226px;height: 230px;background: white;}
+			#nav-slide-down3{display: none;z-index: 6;position: absolute;width: 1226px;height: 230px;background: white;}
+			#nav-slide-down4{display: none;z-index: 6;position: absolute;width: 1226px;height: 230px;background: white;}
+			#nav-slide-down5{display: none;z-index: 6;position: absolute;width: 1226px;height: 230px;background: white;}
+			
+			#nav-slide-right1{z-index: 4564;display: none;position: absolute;margin-left: 260px;width: 550px;background: url(img/首页右滑.png);height: 460px;}
+			#nav-slide-right2{z-index: 4564;display: none;position: absolute;margin-left: 260px;width: 530px;background: url(img/首页右滑2.png);height: 460px;}
+			#nav-slide-right3{z-index: 4564;display: none;position: absolute;margin-left: 260px;width: 550px;background: url(img/首页右滑3.png);height: 460px;}
+
+			
+			#navigation2{width: 100%;height: 500px;background: #F5F5F5;}
+			#main-navi-left{width: 260px;background: black;background: rgba(0,0,0,0.5);height: 500px;float: left;z-index: 5;display: block;position: absolute;}
+			.imgb{float: left;margin-top: 15px;margin-left:14px ;height: 55px;width: 55px;}
+			#imgb1{background: url(img/黑1.png);}
+			
+			#main-content{width: 100%;height: 1370px;background: #F5F5F5;}
+			
+			/*lingyizhong*/
+			dl{float: left;padding: 0px;width: 290px;}
+			dd{text-align: center;color:#FF6700;}
+			.dd1{font-weight: bold;color: black;}
+			
+			#productShow{width: 1226px;height:450px ;background: #F5F5F5;}
+			#product1{margin-top: 50px;width: 1226px;height:400px ;background: white;position: absolute;}
+			#product2{display: none;margin-top: 50px;width: 1226px;height:400px ;background: white;position: absolute;}
+			/*.product1L{;float: left;height: 320px;width: 240px;margin-left:35px ;}
+			.product1R{}*/
+			#left1{border: solid 1px #F5F5F5;background: rgba(255,255,255,0.5);}
+			#right1{border: solid 1px#F5F5F5;background: rgba(255,255,255,0.5);}
+			
+			#ad-show{position: absolute;margin-top: 20px;width: 1226px;height: 180px;}
+			#showline{width: 1226px;height: 50px;background: #F5F5F5;padding: 0px;}
+			.span-show {float: right;padding: 15px;}
+			.span-show-list{height:300px ;margin-left: 2px;width:236px ;margin-top:10px ;float: left;}
+			/*展示柜的评论div #span-show-div1{display: none;margin-top: 200px;height: 100px;width: 236px;background: #FF6700;z-index: 5;position: absolute;}*/
+			
+			
+			#show-space{height: 650px;width: 1226px;background: #F5F5F5 ;}
+			
+			.ulNavi{ list-style: none;margin: 0px auto;}
+			.li-header-navi{float: left; margin: 5px 5px;margin-left: 10px;color: #B0B0B0;font-size: 5px;}
+			.li-main-navigation{background: white;float: left; margin: 0px 5px;margin-left: 10px;color: #B0B0B0;font-size: 5px;color: black; font-size: 17px;margin: auto 7px; padding: 50px 0px; }
+			.li-main-nav-left{background: rgba(0,0,0,0.5);padding-left:20px ;padding-top:10px ;height: 40px;line-height: 30px;font-size:15px;color: white;}
+			.span1{font-size: 25px;float: right;clear: right;}
+			#shopcar{position: absolute;display: block;z-index: 2;box-shadow: 0px 0px 5px  darkgray;display: none;height: 100px;background: white; width: 290px;float: right;margin-right: 20px;position: relative;}
+			
+			#sumbit{height: 50px;width: 50px;background: url(img/搜索icon.png);border: none;margin-right:30%;float: right;display: block;z-index: 9;}
+			#search{float: left;margin: 5px 30%;margin-right:0px;border: solid darkgrey 1px;width: 30%;height: 40px;display: block;z-index: 9;}
+			#p_welcom{text-align: center;color: red;font-size: 40px;margin: 0px;font-family:"黑体";}
+			#header-down-shopCar{margin-left: 20px;margin-top: 0px;float: right;width: 100px;height: 30px;background:url(img/购物车未点击.png) #424242;margin-right: 30px;}
+		
+			#foot-up{width: 1226px;height: 50px;background: white;}
+			.bottom-li{font-family: "新宋体";float: left;font-size:20px;padding: 10px;margin-top: 10px;margin-left: 70px;font-weight: lighter;color: black;}
+			#foot-down{height: 150px;background: darkgoldenrod;}
+			#foot-down-left{height: 150px;background: white;width: 1000px;float: left;}
+			#foot-down-right{height: 150px;background: white;width: 226px;float: left;}
+		</style>
+
+	</head>
+	<body>
+		<!--搜索栏-->
+		<div style="height: 50px;width: 100%;background: white;opacity: 0.5;position: fixed;display: block;z-index: 6;">
+			<form>
+				<input type="search" name="search" id="search"value="红米4"/>
+				<input type="submit" name="submit" id="sumbit" value=""/>
+			</form>
+		</div>
+		<div style="width: 100%;height:50px ;background:white ;">
+			
+		</div>
+		<!--容器-->
+		<div id="container">
+			<!--头部-->
+			
+			<div id="header">
+				<!--广告-->
+					<a href="#">
+						<div id="header-up">
+						
+						</div>
+					</a>
+				
+				<!--黑色的导航栏-->
+				<div id="header-down">
+					<ul class="ulNavi">
+						<a href="#"><li class="li-header-navi">小米商城</li></a>
+						<a href="#"><li class="li-header-navi">MIUI</li></a>
+						<a href="#"><li class="li-header-navi">米聊</li></a>
+						<a href="#"><li class="li-header-navi">游戏</li></a>
+						<a href="#"><li class="li-header-navi">多看阅读</li></a>
+						<a href="service.html"><li class="li-header-navi">云服务</li></a>
+						<a href="#"><li class="li-header-navi">金融</li></a>
+					</ul>
+					<ul class="ulNavi"style="float: right;margin: auto 100px;">
+						<a href="login.html" class="a2"><li class="li-header-navi">登录</li></a>
+						<a href="注册/register.html" class="a2"><li class="li-header-navi">注册</li></a>
+						<a href="#" class="a2"><li class="li-header-navi">消息通知</li></a>
+						
+						<!--购物车-->
+					<a href="shopping-cart.html">
+						<div id="header-down-shopCar">
+								
+						</div>
+					</a>
+					</ul>
+					
+				</div>
+					
+				
+			</div>
+			<!--主体-->
+			<div id="main">
+				<!--最上排导航-->
+				<div id="navigation1">
+					<img src="img/MILOGO.png" align="center" style="margin: auto auto;padding: 25px;"/>
+					<img src="img/搞艺术.png" align="center" />
+					<div id="shopcar">
+						<p align="center"style="padding: 30px 0px;font-size: 5px;">购物车还没有商品，赶紧选购吧！</p>
+					</div>
+					<div id="navigation1-nav">
+						<ul class="ulNavi">
+							<a href="phone-list.html"><li class="li-main-navigation" id="li1">小米手机</li></a>
+							<a href="#"><li class="li-main-navigation" id="li2">红米</li></a>
+							<a href="#"><li class="li-main-navigation" id="li3">平板·笔记本</li></a>
+							<a href="#"><li class="li-main-navigation" id="li4">电视</li></a>
+							<a href="#"><li class="li-main-navigation" id="li5">盒子·影音</li></a>
+							<a href="#"><li class="li-main-navigation">路由器</li></a>
+							<a href="#"><li class="li-main-navigation">智能硬件</li></a>
+							<a href="#"><li class="li-main-navigation">服务</li></a>
+							<a href="#"><li class="li-main-navigation">社区</li></a>
+						</ul>
+					</div>
+					
+				</div>
+				<!--主体导航-->
+				<div id="navigation2">
+					<!--导航下滑栏-->
+					<div id="nav-slide-down1">
+						<a href="#"><img  src="img/导航下1-1.png"/></a>
+						<a href="#"><img  src="img/导航下1-2.png"/></a>
+						<a href="#"><img  src="img/导航下1-3.png"/></a>
+					</div>
+					<div id="nav-slide-down2">
+						<a href="#"><img  src="img/导航下2-1.png"/></a>
+						<a href="#"><img  src="img/导航下2-2.png"/></a>
+						<a href="#"><img  src="img/导航下2-3.png"/></a>
+					</div>
+					<div id="nav-slide-down3">
+						<a href="#"><img  src="img/导航下1-1.png"/></a>
+						<a href="#"><img  src="img/导航下1-1.png"/></a>
+						<a href="#"><img  src="img/导航下1-1.png"/></a>
+					</div>
+					<div id="nav-slide-down4">
+						<a href="#"><img  src="img/导航下2-1.png"/></a>
+						<a href="#"><img  src="img/导航下2-2.png"/></a>
+						<a href="#"><img  src="img/导航下2-3.png"/></a>
+					</div>
+					<div id="nav-slide-down5">
+						<a href="#"><img  src="img/导航下1-1.png"/></a>
+						<a href="#"><img  src="img/导航下1-1.png"/></a>
+						<a href="#"><img  src="img/导航下1-1.png"/></a>
+					</div>
+					<!---->
+						
+						<div class="ck-slide">
+							<ul class="ck-slide-wrapper">
+								<li>
+									<a href="#"><img src="images/ad_banner01.jpg" alt=""></a>
+									</li>
+									<li style="display:none">
+										<a href="#"><img src="images/ad_banner02.jpg" alt=""></a>
+									</li>
+									<li style="display:none">
+										<a href="javascript:"><img src="images/ad_banner03.jpg" alt=""></a>
+									</li>
+									<li style="display:none">
+										<a href="javascript:"><img src="images/ad_banner04.jpg" alt=""></a>
+									</li>
+									<li style="display:none">
+										<a href="javascript:"><img src="images/ad_banner05.jpg" alt=""></a>
+									</li>
+							</ul>
+							<a href="javascript:;" class="ctrl-slide ck-prev">上一张</a> <a href="javascript:;" class="ctrl-slide ck-next">下一张</a>
+							<div class="ck-slidebox">
+								<div class="slideWrap">
+									<ul class="dot-wrap">
+										<li class="current"><em>1</em></li>
+										<li><em>2</em></li>
+										<li><em>3</em></li>
+										<li><em>4</em></li>
+										<li><em>5</em></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- js -->
+						<script src="js/jquery-1.8.3.min.js"></script>
+						<script src="js/slide.js"></script>
+						<script>
+							$('.ck-slide').ckSlide({
+								dir: 'x'
+								
+							});
+						</script>
+					<!---->
+					<div id="main-navi-left">
+						<ul class="ulNavi"style="padding: 0;margin-top: 0px;">
+							<a href="#"><li class="li-main-nav-left" id="leftLi1">手机&nbsp;电话卡<span class="span1">></span></li></a>
+							<a href="#"><li class="li-main-nav-left" id="leftLi2">笔记本&nbsp;平板<span class="span1">></span></li></a>
+							<a href="#"><li class="li-main-nav-left">电视&nbsp;盒子<span class="span1">></span></li></a>
+							<a href="#"><li class="li-main-nav-left">路由器&nbsp;智能硬件<span class="span1">></span></li></a>
+							<a href="#"><li class="li-main-nav-left">耳机&nbsp;音箱<span class="span1">></span></li></a>
+							<a href="#"><li class="li-main-nav-left">移动电源&nbsp;电池&nbsp;插线板<span class="span1">></span></li></a>
+							<a href="#"><li class="li-main-nav-left">保护套&nbsp;贴膜<span class="span1">></span></li></a>
+							<a href="#"><li class="li-main-nav-left">线材&nbsp;支架&nbsp;存储卡<span class="span1">></span></li></a>
+							<a href="#"><li class="li-main-nav-left">箱包&nbsp;服饰&nbsp;鞋<span class="span1">></span></li></a>
+							<a href="#"><li class="li-main-nav-left">咪兔&nbsp;生活周边<span class="span1">></span></li></a>
+						</ul>
+					</div>
+					<!--导航栏右滑栏-->
+					<div id="nav-slide-right1"></div>
+					<div id="nav-slide-right2"></div>
+					<div id="nav-slide-right3"></div>
+
+				</div>
+				<!--主要内容-->
+				<div id="main-content">
+					<div style="width: 1226px;height: 200px;background: white;margin-top: 20px;">
+						<!--左圆角框-->
+						<div style="margin: auto 10px;border-radius:20px ;width: 230px;height: 170px;background:rgba(95,87,80,1);float: left;">
+							<div id="imgb1" class="imgb"></div>
+							<div id="imgb2" class="imgb"><img  src="img/黑2.png"/></div>
+							<div id="imgb3" class="imgb"><img  src="img/黑3.png"/></div>
+							<div id="imgb4" class="imgb"><img  src="img/黑4.png"/></div>
+							<div id="imgb5" class="imgb"><img  src="img/黑5.png"/></div>
+							<div id="imgb6" class="imgb"><img  src="img/黑6.png"/></div>
+			
+						</div>
+						<a href="#"><img class="img1" src="img/小广告1.png"/></a>
+						<a href="#"><img class="img1" src="img/小广告2.png"/></a>
+						<a href="#"><img class="img1" src="img/小广告3.png"/></a>
+					</div>	
+					<!--商品-->
+					<span style=" float:left;font-size: 20px; font-weight: lighter;padding: 10px;">热门单品</span>
+					<input type="button" value=">" id="left1" class="span-show" onclick="right1()"/>
+					<input type="button" value="<" id="right1" class="span-show" onclick="left1()"/>
+					<div id="productShow">
+						<div id="product1">
+							
+							<dl>
+								<a href="商品详情/commodityDetails.html"><dt><img src="img/单品1.png"/></dt></a>
+								<dd class="dd1">小米手机5&nbsp;64GB</dd>
+								<dd>1799元</dd>
+							</dl>
+							<dl>
+								<a href="#"><dt><img src="img/单品2.png"/></dt></a>
+								<dd class="dd1">小米手机5s&nbsp;Plus</dd>
+								<dd>2299元</dd>
+							</dl>
+							<dl>
+								<a href="#"><dt><img src="img/单品3.png"/></dt></a>
+								<dd class="dd1">小米5s</dd>
+								<dd>1999元</dd>
+							</dl>
+							<dl>
+								<a href="#"><dt><img src="img/单品4.png"/></dt></a>
+								<dd class="dd1">小米电视4A&nbsp;43寸</dd>
+								<dd>2099元</dd>
+							</dl>
+							
+						</div>
+						
+						<div id="product2">
+							<dl>
+								<a href="#"><dt><img src="img/单品2-1.png"/></dt></a>
+								<dd class="dd1">小米充电宝</dd>
+								<dd>149元</dd>
+							</dl>
+							<dl>
+								<a href="#"><dt><img src="img/单品2-2.png"/></dt></a>
+								<dd class="dd1">小米手环</dd>
+								<dd>149元</dd>
+							</dl>
+							<dl>
+								<a href="#"><dt><img src="img/单品2-3.png"/></dt></a>
+								<dd class="dd1">小米盒子</dd>
+								<dd>299元</dd>
+							</dl>
+							<dl>
+								<a href="#"><dt><img src="img/单品2-4.png"/></dt></a>
+								<dd class="dd1">小米空气净化器</dd>
+								<dd>449元</dd>
+							</dl>
+						</div>
+						
+					</div>
+					
+					
+					<!--展示柜-->
+					<div id="showline">
+						<span style=" float:left;font-size: 20px; font-weight: lighter;padding: 10px;">智能硬件</span>
+						<a href="#"><span class="span-show">路由器</span></a>
+						<a href="#"><span class="span-show">家电</span></a>
+						<a href="#"><span class="span-show">热门</span></a>
+					</div>
+					<div id="show-space">
+						<!--da-->
+						<div style="height: 650;width: 240px;padding: 10px 0px;margin-left: 15px;float: left;">
+							<a href="#"><img class="img1"  src="img/展示列.png"/></a>
+						</div>
+						<!--第一行-->
+						<div>
+							<div class="span-show-list">
+								<!--<div id="span-show-div1"></div>-->
+								<a href="#"><img class="img1" id="img2-1" src="img/展示行1.png"/></a>
+							</div>
+							<div class="span-show-list">
+								<!--//<div id="span-show-div2"></div>-->
+								<a href="#"><img class="img2" id="img2-2" src="img/展示行2.png"/></a>
+							</div>
+							<div class="span-show-list">
+								<!--<div id="span-show-div3"></div>-->
+								<a href="#"><img class="img2" id="img2-3" src="img/展示行3.png"/></a>
+							</div>
+							<div class="span-show-list">
+								<a href="#"><img class="img2" src="img/展示行4.png"/></a>
+							</div>
+							<div class="span-show-list">
+								<a href="#"><img class="img2" src="img/展示行5.png"/></a>
+							</div>
+							<div class="span-show-list">
+								<a href="#"><img class="img2" src="img/展示行6.png"/></a>
+							</div>
+							<div class="span-show-list">
+								<a href="#"><img class="img2" src="img/展示行7.png"/></a>
+							</div>
+							<div class="span-show-list">
+								<a href="#"><img class="img2" src="img/展示行8.png"/></a>
+							
+								<a href="#"><img class="img2" style="margin-top: 5px;" src="img/展示行9.png"/></a>
+							</div>
+							
+							
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<div id="foot">
+				<div id="foot-up">
+					<ul class="ulNavi">
+							<a href="#"><li  class="bottom-li" >预约维修服务</li></a>
+							<a href="#"><li  class="bottom-li">7天无理由退货</li></a>
+							<a href="#"><li  class="bottom-li">15天免费换货</li></a>
+							<a href="#"><li  class="bottom-li">满150元包邮</li></a>
+							<a href="#"><li  class="bottom-li">520余家售后网点</li></a>
+						</ul>
+				</div>
+				<hr width="80%" />
+				<div id="foot-down">
+					<div id="foot-down-left">
+						<span class="span-show" style="float: left;margin-left: 50px;">帮助中心</span>
+						<span class="span-show" style="float: left;margin-left: 50px;">服务支持</span>
+						<span class="span-show" style="float: left;margin-left: 50px;">线下门店</span>
+						<span class="span-show" style="float: left;margin-left: 50px;">关于小米</span>
+						<span class="span-show" style="float: left;margin-left: 50px;">关注我们</span>
+						<span class="span-show" style="float: left;margin-left: 50px;">特色服务</span>
+						
+						<span class="span-show" style="clear: left;float: left;margin-left: 65px;font-size: 10px;">帐户管理</span>
+						<span class="span-show" style="float: left;margin-left: 65px;font-size: 10px;">售后政策</span>
+						<span class="span-show" style="float: left;margin-left: 65px;font-size: 10px;">小米之家</span>
+						<span class="span-show" style="float: left;margin-left: 65px;font-size: 10px;">小米生活</span>
+						<span class="span-show" style="float: left;margin-left: 65px;font-size: 10px;">了解小米</span>
+						<span class="span-show" style="float: left;margin-left: 65px;font-size: 10px;">新浪微博</span>
+						
+						<span class="span-show" style="clear: left;float: left;margin-left: 65px;font-size: 10px;">购物指南</span>
+						<span class="span-show" style="float: left;margin-left: 65px;font-size: 10px;">服务网点</span>
+						<span class="span-show" style="float: left;margin-left: 65px;font-size: 10px;">门下商店</span>
+						<span class="span-show" style="float: left;margin-left: 65px;font-size: 10px;">小米部落</span>
+						<span class="span-show" style="float: left;margin-left: 65px;font-size: 10px;">加入小米</span>
+						<span class="span-show" style="float: left;margin-left: 65px;font-size: 10px;">礼物吗</span>
+					</div>
+					<div id="foot-down-right">
+						<p style="font-size: 20px;color: #FF6700;text-align: center;line-height: 20px;">400-123-4567</p>
+						<p style="padding: 5px;font-size: 15px;color: black;text-align: center;line-height: 20px;">周一至周日 8:00-18:00 （仅收市话费）</p>
+						<input type="button" value="24小时在线客服" id="btn" width="30px" style="margin: 0px 60px;background: white;border: #FF6700 solid 1px;color: #FF6700;"/>
+					</div>
+				</div>
+				<img src="img/底部.png"/>
+			</div>
+		</div>
+		
+	</body>
+</html>

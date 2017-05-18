@@ -1,0 +1,53 @@
+#total{widows: 100%;height: 2500px;margin-top: 0px;background-color: #F5F5F5;}
+/*#top1{width: 100%;height: 40px;background-color: #333333;}*/
+#top1{width: 100%;height: 30px;background: #333333;float:left;}
+.li-header-navi{float: left; margin: 5px 5px;margin-left: 10px;color: #B0B0B0;font-size: 5px;}
+.ulNavi{ list-style: none;margin: 0px auto;}
+#header-down-shopCar{margin-left: 20px;margin-top: 0px;float: right;width: 100px;height: 30px;background:url(img/购物车未点击.png) #424242;margin-right: 30px;}
+/*#top2{width: 100%;height: 140px;background-color: white;}*/
+#navigation1{width: 100%;height: 150px;background: white;box-shadow: 0px 0px 5px  darkgray;}
+#navigation1-nav{position: absolute;background: white;display: inline;height: 100px;width: 55%;float: right;margin-right: 10px;margin-top: 0px;}
+#navigation2{width: 100%;height: 1800px;background: #F5F5F5;}
+#nav-slide-down1{background: white;display: none;z-index: 6;position: absolute;width: 1226px;height: 230px;}
+#nav-slide-down2{display: none;z-index: 6;position: absolute;width: 1226px;height: 230px;background: white;}
+#nav-slide-down3{display: none;z-index: 6;position: absolute;width: 1226px;height: 230px;background: white;}
+#nav-slide-down4{display: none;z-index: 6;position: absolute;width: 1226px;height: 230px;background: white;}
+#nav-slide-down5{display: none;z-index: 6;position: absolute;width: 1226px;height: 230px;background: white;}
+
+#shopcar{position: absolute;display: block;z-index: 2;box-shadow: 0px 0px 5px  darkgray;display: none;height: 100px;background: white; width: 290px;float: right;margin-right: 20px;position: relative;}
+.li-main-navigation{background: white;float: left; margin: 0px 5px;margin-left: 10px;color: #B0B0B0;font-size: 5px;color: black; font-size: 17px;margin: auto 7px; padding: 50px 0px; }
+
+#ultop{list-style: none;color: #757575;font-size: 10px;margin-left: 40px;}
+a{text-decoration: none;color: #757575;}
+#li-top{color: #757575;}
+#main{width: 90%;height: 600px;background-color: #F5F5F5;margin: 0px auto;}
+#maintop{width: 100%;height: 537px;background-color: white;}
+#mainspan1{margin-left: 20px;float: left;line-height: 80px;color: #FF6700;width: 15%;}
+
+#ulmain{list-style: none;height: 60px;width: 920px;line-height: 80px;float: left;}
+.ulmain-list1{font-size: 16px;float: left;padding: 20px; color: #757575;height: 20px; line-height: 10px;}
+#ulmain-list8{font-size: 16px;float: left;padding: 20px; color: #FF6700;height: 20px; line-height: 10px;}
+#mainimg1{width: 100%;height: 460px;margin-top: -15px;}
+#maindown{width: 100%;height: 800px;}
+#maindown1{background-color: white;float: left;width: 560px;height:450px; margin-top: 20px;margin-left: 0px;}
+#maindown2{background-color: white;float: right;width: 560px;height:450px; margin-top: 20px;margin-right: 0px;}
+#maindown3{background-color: white;float: left;width: 560px;height:450px; clear: both;margin-top: 20px;margin-left: 0px;}
+#maindown4{background-color: white;float: right;width: 560px;height:450px; margin-top: 20px;margin-right: 0px;}
+#maindown5{background-color: white;float: left;width: 560px;height:450px; clear: both; margin-top: 20px;margin-left: 0px;}
+.maindownimg{width: 560px;height: 340px;}
+hr{border-color: #EEEEEE;width: 80%;}
+.maindown-div{width: 280px;height: 80px;float: left;margin-left: 50px;}
+.maindownspan1{font:normal  bold 26px "黑体" ;color: black;vertical-align: middle;}
+.maindownspan2{font:normal  bold 26px "黑体" ;color: #FF6700;}
+.maindownspan3{font: normal normal 10px "新宋体";color: #757575;}
+.mainbtn{width: 140px;height: 40px;border:solid 1px #FF6700;float: right;margin-top: 20px;margin-right: 60px;}
+.btnspan{font-size: 16px;line-height: 40px;margin-left: 40px;color: #FF6700;}
+#endhr{width: 100%;margin-top: 10px;}
+#foot{margin-top: 175px;width: 100%;height: 300px;background: white;}
+#foot-up{width: 100%;height: 50px;background: white;}
+.bottom-li{font-family: "新宋体";float: left;font-size:20px;padding: 10px;margin-top: 10px;margin-left: 70px;font-weight: lighter;color: black;}
+#foot-down{height: 150px;}
+#foot-down-left{height: 150px;background: white;width: 80%;float: left;}
+#foot-down-right{height: 150px;background: white;width: 20%;float: left;}
+.span-show {float: right;padding: 15px;}
+.span-show-list{height:300px ;margin-left: 2px;width:236px ;margin-top:10px ;float: left;}

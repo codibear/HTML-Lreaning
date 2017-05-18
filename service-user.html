@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-1.11.3.js" ></script>
+		<style type="text/css">
+			 /*管理标题*/
+			
+			#container{width: 1040px;height: 500px;margin: 0px auto;background: whitesmoke;}
+			#header{width:1020px ;height: 150px;background: white;border: solid whitesmoke 10px;}
+			#head-up{width: 1020px;height: 60px;background:white;}
+			#header-list{width: 1020px;height: 50px;background: white;margin: 0px auto;}
+			#spanTitle{font-size: 25px;float: left;padding: 20px;color: #757575;}
+			
+			.ul-none{list-style: none;padding: 0px 0px;}
+			.head-li{float: left;margin: 10px 30px;color: #757575;}
+			.head-btn{font-size: 15px;color: silver;border: none;background: rgba(255,255,255,0);}
+			#search{float: right;height: 50px;border: silver 1px solid;}
+			#sumbit{border: 1px silver solid;width: 50px;color: #FF6700;float: right;height: 50px;margin-right: 50px;background: rgba(0,0,0,0);}
+		
+			#main{width: 1020px;height: 300px;margin:10px auto;background: whitesmoke;}
+			#table1{width: 1020px;margin: 0px auto;}
+			#table2{width: 1020px;margin: 0px auto;}
+			#divt1{width: 1020px;height: 350px;}
+			#divt2{width: 1020px;height: 350px;position: absolute;display: none;}
+			
+			.touch{border: 1px silver solid;width: auto;color: #FF6700;background: rgba(0,0,0,0);}
+			
+			#tr1{background: #FF6700;color: white;}
+			td{text-align: center;}
+		</style>
+		<style type="text/javascript">
+			
+		</style>
+		<script>
+			//标题列表点击变色,鼠标形状变化
+			$(function(){
+				$("#adduser").click(function(){
+					$(".head-btn").css("color","#757575");
+					$("#adduser").css("color","#FF6700");
+					$("#divt2").css("display","block");
+					$("#divt1").css("display","none");
+				});
+				$("#adduser").mouseover(function(){
+					$("#adduser").css("cursor","pointer");
+				});
+			});
+			$(function(){
+				$("#fixuser").click(function(){
+					$(".head-btn").css("color","#757575");
+					$("#fixuser").css("color","#FF6700");
+					$("#divt1").css("display","block");
+					$("#divt2").css("display","none");
+				});
+				$("#fixuser").mouseover(function(){
+					$("#fixuser").css("cursor","pointer");
+				});
+			});
+			
+			//删除
+			$(function(){
+				$("#do12").click(function(){
+					$("#tr2").remove();					
+				});
+			});
+			$(function(){
+				$("#do13").click(function(){
+					$("#tr3").remove();					
+				});
+			});
+			$(function(){
+				$("#do14").click(function(){
+					$("#tr4").remove();					
+				});
+			});
+			$(function(){
+				$("#do15").click(function(){
+					$("#tr5").remove();					
+				});
+			});
+			$(function(){
+				$("#do16").click(function(){
+					$("#trsum").remove();					
+				});
+			});
+			//提交按钮
+			$(function(){
+				$("#sumbit").mouseover(function(){
+					$("#search").css("border","#FF6700 2px solid");
+					$("#sumbit").css("color","white");
+					$("#sumbit").css("background","#FF6700");
+					$("#sumbit").css("border","white");
+				});
+				$("#sumbit").mouseout(function(){
+					$("#search").css("border","black 1px solid");
+					$("#sumbit").css("color","#FF6700");
+					$("#sumbit").css("background","rgba(0,0,0,0)");
+					$("#sumbit").css("border","silver 1px solid");
+					
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div id="container">
+			<div id="header">
+				<div id="head-up">
+					<span id="spanTitle">用户管理</span><br />
+				
+				</div>
+				
+				<div id="header-list">
+					
+					<ul class="ul-none">
+						
+					<li class="head-li"><input type="button" class="head-btn" id="fixuser" value="修改用户" style="color: #FF6700;"/></li>
+					<li class="head-li"><input type="button" class="head-btn" id="adduser" value="添加用户"/></li>
+					
+					
+					</ul>
+				<form>
+					<input type="submit" id="sumbit" value="查询" name="sumbit"/>
+					<input type="search" id="search" name="search"/>				
+				</form>
+				</div>
+
+		<div id="main">
+			<div id="divt1">
+				<table id="table1" border="1px"bordercolor="#FF6600" cellspacing="0px" align="center" >
+					<caption>修改用户 </caption>
+					<tr id="tr1">
+						<td >序号</td>
+						<td>用户名</td>
+						<td>角色</td>
+						<td>会员类型</td>
+						<td>状态（启用/禁用）</td>
+						<td>删除</td>
+						
+					</tr>
+					<tr id="tr2">
+						<td>1</td>
+						<td>sl_user01</td>
+						<td>会员</td>
+						<td>加盟店</td>
+						<td><input type="checkbox" id="checkbox1"  />  </td>
+						<td><input type="button"class="touch" value="删除" id="do12"/></td>
+						
+					</tr>
+					<tr id="tr3">
+						<td>2</td>
+						<td>admin</td>
+						<td>管理员</td>
+						<td >-</td>
+						<td ><input type="checkbox" id="checkbox2" /></td>
+						<td><input type="button"class="touch" value="删除" id="do13"/></td>
+						
+					</tr>
+					<tr id="tr4">
+						<td>3</td>
+						<td>sl_user03</td>
+						<td>会员</td>
+						<td>消费会员</td>
+						<td><input type="checkbox" id="checkbox3" /></td>
+						<td><input type="button"class="touch" value="删除" id="do14"/></td>
+						
+					</tr>
+					<tr id="tr5">
+						<td>4</td>
+						<td>sl_user04</td>
+						<td>会员</td>
+						<td>vip会员</td>
+						<td><input type="checkbox" id="checkbox4" /></td>
+						<td><input type="button"class="touch" value="删除" id="do15"/></td>
+						
+					</tr>
+				</table>
+			</div>
+			<div id="divt2">
+				
+		
+				<table id="table2" border="1px"bordercolor="#FF6600" cellspacing="0px"align="center" >
+					<caption>添加用户<input type="button" value="添加" style="height: 20px;color: white;border: 1px solid silver;background: #FF6700;float: right;margin-right:20px ;"/></caption>
+					
+					<tr id="tr1">
+						
+						<td>用户名</td>
+						<td>角色</td>
+						<td>会员类型</td>
+						<td>手机号</td>
+						<td>提交</td>
+						
+					</tr>
+					<tr id="trsum">
+						
+						<td><input type="text" id="name" value="user" align="center"  /></td>
+						<td>
+							<select name="select1">
+							<option value="会员">会员</option>
+							<option value="管理员">管理员</option>
+							</select>
+						</td>
+						<td>
+							<select name="select2">
+							<option value="加盟店">加盟店</option>
+							<option value="消费会员">消费会</option>
+							<option value="vip会员">vip会员</option>
+							</select>
+						</td>
+						
+	
+						<td><input type="text" id="tel" value="130xxxxxxxx" /></td>
+						<td><input type="button"class="touch" value="提交" id="do16"/></td>
+					</tr>
+				
+				</table>
+			</div>
+		</div>
+    </div>
+	</body>
+</html>

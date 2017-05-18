@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>	
+		<script type="text/javascript" src="../js/jquery-1.11.3.js"></script>
+		<script type="text/javascript" src="../js/商品管理/merchandiseControl.js">	</script>
+		<link rel="stylesheet" type="text/css" href="../css/商品管理/merchandiseControl.css"/>	
+	</head>
+	<body>
+		<div id="detailBox" >
+			<div id="header">
+				<div id="head-up">
+					<span id="spanTitle">商品管理</span>
+					<span id="spanDecro">请谨防钓鱼网站和诈骗电话，<a href="#" class="silver">了解更多></a></span>
+				</div>
+				
+				<div id="header-list">
+					<ul class="ul-none">						
+						<li class="head-li"><input type="button" class="head-btn" id="mer-add" value="添加"/></li>
+						<li class="head-li"><input type="button" class="head-btn" id="mer-explain" value="修改"/></li>
+						<li class="head-li"><input type="button" class="head-btn" id="mer-detlete" onclick="del()" value="删除"/></li>
+						<li class="head-li"><input type="button" class="head-btn" id="mer-look" value="查看"/></li>
+					</ul>
+					<form>
+						<input type="submit" id="sumbit" value="查询" name="sumbit"/>
+						<input type="search" id="search" name="search"/>				
+					</form>
+				</div>
+			</div>
+			<div id="mer-body1" class="mer-body" >
+				<div id="mer-cen">
+					<table id="mer-cen-table" border="1px"  cellspacing="0px" cellpadding="2">
+						<tr>
+							<th id="cen-th1" class="mer-th1">选择</th>
+							<th id="cen-th2" class="mer-th1">商品名称</th>
+							<th id="cen-th3" class="mer-th1">商品图片</th>
+							<th id="cen-th4" class="mer-th1">价格</th>
+							<th id="cen-th5" class="mer-th1">颜色</th>
+							<th id="cen-th6" class="mer-th1">规格</th>
+							<th id="cen-th7" class="mer-th1">库存</th>
+							<th id="cen-th8" class="mer-th1">状态（上架/下架）</th>
+							
+						</tr>
+						<tr  id="cen-tr1">
+							<td id="cen-td1" class="mer-td1"><input type="radio" class="cen-radio" name="choose" id="choose-xiaomi5" value="小米5" /></td>
+							<td id="cen-td2" class="mer-td1">小米手机5</td>
+							<td id="cen-td3" class="mer-td1"><img src="../img/td-1.jpg"/></td>
+							<td id="cen-td4" class="mer-td1">1799元</td>
+							<td id="cen-td5" class="mer-td1">白色/金色</td>
+							<td id="cen-td6" class="mer-td1"> 64G/128G</td>
+							<td id="cen-td7" class="mer-td1">6666</td>
+							<td id="cen-td8" class="mer-td1"><input type="checkbox" class="cen-check" name="xiaomi5" id="xiaomi5" value="小米上下架" /></td>
+							
+							
+						</tr>
+						<tr id="cen-tr2">
+							<td id="cen-td9" class="mer-td1"><input type="radio"class="cen-radio"  name="choose" id="choose-hand2" value="小米5" /></td>
+							<td id="cen-td10" class="mer-td1">小米手环2</td>
+							<td id="cen-td11" class="mer-td1"><img src="../img/td-2.jpg"/></td>
+							<td id="cen-td12" class="mer-td1">149元</td>
+							<td id="cen-td13" class="mer-td1">黑色</td>
+							<td id="cen-td14" class="mer-td1"> ————</td>
+							<td id="cen-td15" class="mer-td1">3256</td>
+							<td id="cen-td16" class="mer-td1"><input type="checkbox" class="cen-check" name="choose" id="hand2" value="小米手环2上下架" /></td>
+							
+							
+						</tr>
+						<tr id="cen-tr3">
+							<td id="cen-td17" class="mer-td1"><input type="radio"class="cen-radio" name="choose" id="choose-Air" value="小米5" /></td>
+							<td id="cen-td18" class="mer-td1">小米笔记本Air</td>
+							<td id="cen-td19" class="mer-td1"><img src="../img/td-3.jpg"/></td>
+							<td id="cen-td20" class="mer-td1">3599元/4599元</td>
+							<td id="cen-td21" class="mer-td1">银色/金色</td>
+							<td id="cen-td22" class="mer-td1"> 4G 128G/4G 256G</td>
+							<td id="cen-td23" class="mer-td1">11</td>
+							<td id="cen-td24" class="mer-td1"><input type="checkbox" class="cen-check" name="Air" id="Air" value="小米笔记本Air上下架" /></td>
+		
+						</tr>
+						<tr id="cen-tr4">
+							<td id="cen-td25" class="mer-td1"><input type="radio"class="cen-radio" name="choose" id="choose-Air" value="小米5" /></td>
+							<td id="cen-td26" class="mer-td1">红米Note 4X</td>
+							<td id="cen-td27" class="mer-td1"><img src="../img/td-4.jpg"/></td>
+							<td id="cen-td28" class="mer-td1">999元/1299元</td>
+							<td id="cen-td29" class="mer-td1">樱花粉/蓝绿色/香槟金</td>
+							<td id="cen-td30" class="mer-td1"> 3G+32G/4G+64GG</td>
+							<td id="cen-td31" class="mer-td1">2</td>
+							<td id="cen-td32" class="mer-td1"><input type="checkbox" class="cen-check" name="note4x" id="note4x" value="红米Note 4X上下架" /></td>
+		
+						</tr>
+					</table>
+				</div>
+				<div id="mer-down">
+					注:状态上下架,打勾表示上架可出售,且立即生效
+				</div>
+				<div id="mer-page"> 
+					<a class="page-1"  href="#">1</a>
+					<a class="page-1" href="#">2</a>
+					<a class="page-1" href="#">3</a>
+					<a class="page-1" href="#">4</a>
+					<a class="page-1" href="#">5</a>
+					<a class="page-1" href="#">6</a>
+					<a class="page-1" href="#">7</a>
+					<a class="page-1" href="#">8</a>
+					<a class="page-1" href="#">9</a>
+					<a class="page-1" href="#">>Next</a>
+					
+				</div>
+			</div>
+			<div id="mer-body2" class="mer-body">
+				<form>
+					<table id="add-table">
+						<tr>
+							<td class="add-td1">商品名称：</td>
+							<td class="add-td2" colspan="2"> <input type="text" name="mer-name1" id="mer-name1" value="" /><span id="add-span1">*</span></td>
+						</tr>
+					
+						<tr>
+							<td class="add-td1">商品编号：</td>
+							<td  class="add-td2" id="td-number1"> <input type="text" name="mer-number1" id="mer-number1" value="" /><span id="add-span1">*注意编号的唯一性</span></td>
+							<td id="td-*"> </td>
+						</tr>
+						<tr>
+							<td class="add-td1">价格：</td>
+							<td class="add-td2"colspan="2"> <input type="text" name="mer-price" id="mer-price" value="" /><span id="add-span1">*</span></td>
+						</tr>
+						<tr>
+							<td class="add-td1">颜色：</td>
+							<td class="add-td2" colspan="2"> <input type="text" name="mer-color" id="mer-color" value="" /><span id="add-span1">*</span></td>
+						</tr>
+						<tr>
+							<td class="add-td1">规格：</td>
+							<td class="add-td2" colspan="2"> <input type="text" name="mer-modelle" id="mer-modelle" value="" /><span id="add-span1">*</span></td>
+						</tr>
+						<tr>
+							<td class="add-td1">库存：</td>
+							<td class="add-td2" colspan="2"> <input type="text" name="merinventar" id="mer-inventar" value="" /><span id="add-span1">*</span></td>
+						</tr>
+						<tr>
+							<td class="add-td1"> 状态：</td>
+							<td class="add-td2" colspan="2"><input type="radio" name="join" id="mer-staat" value="上架" />上架
+							 <input type="radio" name="join" id="under" value="下架" />下架</td>
+						</tr>
+						<tr>
+							<td class="add-td1">产品详细：</td>
+							<td class="add-td2" colspan="2"> <input type="text" name="mer-details" id="mer-details" class="add-text"  value="" /></td>
+						</tr>
+						<tr>
+							<td class="add-td1">产品说明：</td>
+							<td class="add-td2" colspan="2" > <input type="text" name="mer-details" id="mer-details" class="add-text" value="" /></td>
+						</tr>
+						<tr>
+							<td class="add-td1">上传商品图片：</td>
+							<td class="add-td2" colspan="2"> <input type="file" name="mer-anmerk" id="mer-anmerk" value="" /></td>
+						</tr>
+						<tr>
+							<td colspan="3"><span id="add-td3">注：*为必填</span></td>
+						</tr>
+						<tr>
+							<td class="add-td1"><input type="button" name="spe" id="mer-spe1" value="保存" class="add-btn1"/></td>
+							<td class="add-td2" colspan="2"> <input type="button" name="mer-back" id="mer-back1" value=" 返回"  class="add-btn"/></td>
+						</tr>
+						
+					</table>			
+				</form>	
+			</div>
+			<div id="mer-body3" class="mer-body">
+				<form>
+					<table id="add-table">
+						<tr>
+							<td class="add-td1">商品名称：</td>
+							<td class="add-td2" colspan="2"> <input type="text" name="mer-name1" id="mer-name1" value="小米手机5" /><span id="add-span1">*</span></td>
+						</tr>			
+						<tr>
+							<td class="add-td1">商品编号：</td>
+							<td  class="add-td2" id="td-number1"> <input type="text" name="mer-number1" id="mer-number1" value="1111111" /><span id="add-span1">*注意编号的唯一性</span></td>
+							<td id="td-*"> </td>
+						</tr>
+						<tr>
+							<td class="add-td1">价格：</td>
+							<td class="add-td2"colspan="2"> <input type="text" name="mer-price" id="mer-price" value="1799元" /><span id="add-span1">*</span></td>
+						</tr>
+						<tr>
+							<td class="add-td1">颜色：</td>
+							<td class="add-td2" colspan="2"> <input type="text" name="mer-color" id="mer-color" value="金色/白色" /><span id="add-span1">*</span></td>
+						</tr>
+						<tr>
+							<td class="add-td1">规格：</td>
+							<td class="add-td2" colspan="2"> <input type="text" name="mer-modelle" id="mer-modelle" value="64G/128G" /><span id="add-span1">*</span></td>
+						</tr>
+						<tr>
+							<td class="add-td1">库存：</td>
+							<td class="add-td2" colspan="2"> <input type="text" name="merinventar" id="mer-inventar" value="6666" /><span id="add-span1">*</span></td>
+						</tr>
+						<tr>
+							<td class="add-td1"> 状态：</td>
+							<td class="add-td2" colspan="2"><input type="radio" name="join" id="mer-staat" value="上架" checked="checked" />上架
+							 <input type="radio" name="join" id="under" value="下架" />下架</td>
+						</tr>
+						<tr>
+							<td class="add-td1" class="add-textarea">产品详细：</td>
+							<td class="add-td2" colspan="2"> 
+								<textarea cols="50" rows="6" id="mer-details" >
+									高端处理器：骁龙820；超长待机：3000mAh(typ)；4轴防抖相机：16MP；省电高亮屏：5.15英寸；双卡双待 / 4G+：全网通3.0；前置指纹识别。
+								</textarea>			
+							</td>
+						</tr>
+						<tr>
+							<td class="add-td1" class="add-textarea">产品说明：</td>
+							<td class="add-td2" colspan="2"> 
+								<textarea cols="50" rows="6" id="mer-explain" >
+									暂无
+								</textarea>			
+							</td>
+						</tr>
+						<tr>
+							<td class="add-td1">上传商品图片：</td>
+							<td class="add-td2" colspan="2"> <input type="file" name="mer-anmerk" id="mer-anmerk" value="" /></td>
+						</tr>
+						<tr>
+							<td colspan="3"><span id="add-td3">注：*为必填</span></td>
+						</tr>
+						<tr>
+							<td class="add-td1"><input type="button" name="spe" id="mer-spe2" value="保存" class="add-btn1"/></td>
+							<td class="add-td2" colspan="2"> <input type="button" name="mer-back2" id="mer-back" value=" 返回"  class="add-btn"/></td>
+						</tr>
+					</table>	
+				</form>
+			</div>
+			<div id="mer-body4" class="mer-body">
+				<form>
+					<table id="add-table">
+						<tr>
+							<td class="add-td1">商品名称：</td>
+							<td class="add-td2" > 小米手机5</td>
+						</tr>
+					
+						<tr>
+							<td class="add-td1">商品编号：</td>
+							<td  class="add-td2" id="td-number1"> 1111111</td>
+							
+						</tr>
+						<tr>
+							<td class="add-td1">价格：</td>
+							<td class="add-td2"colspan="2"> 1799元</td>
+						</tr>
+						<tr>
+							<td class="add-td1">颜色：</td>
+							<td class="add-td2" colspan="2"> 金色/白色</td>
+						</tr>
+						<tr>
+							<td class="add-td1">规格：</td>
+							<td class="add-td2" colspan="2"> 64G/128G</td>
+						</tr>
+						<tr>
+							<td class="add-td1">库存：</td>
+							<td class="add-td2" colspan="2"> 6666</td>
+						</tr>
+						<tr>
+							<td class="add-td1"> 状态：</td>
+							<td class="add-td2" colspan="2">上架</td>
+						</tr>
+						<tr>
+							<td class="add-td1" class="add-textarea">产品详细：</td>
+							<td class="add-td2" colspan="2"> 
+								
+									高端处理器：骁龙820；超长待机：3000mAh(typ)；4轴防抖相机：16MP；省电高亮屏：5.15英寸；双卡双待 / 4G+：全网通3.0；前置指纹识别。
+										
+							</td>
+						</tr>
+						<tr>
+							<td class="add-td1" class="add-textarea">产品说明：</td>
+							<td class="add-td2" colspan="2"> 
+								
+									暂无
+								
+							</td>
+						</tr>
+						<tr>
+							<td class="add-td1">商品图片：</td>
+							<td class="add-td2" colspan="2"> <img src="../img/td-1.jpg"/></td>
+						</tr>
+						<tr>
+							
+						</tr>
+						<tr>
+							
+							<td class="add-td2" colspan="2"> <input type="button" name="mer-back" id="mer-back3" value=" 返回"  class="add-btn"/></td>
+						</tr>
+					</table>			
+				</form>								
+			</div>
+		</div>
+	</body>
+</html>

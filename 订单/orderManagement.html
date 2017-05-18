@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>订单</title><link rel="icon" href="../img/log.png">
+		<script type="text/javascript"src="../js/jquery-1.11.3.js"></script>
+		<script type="text/javascript" src="../js/订单/orderManagement.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/订单/orderTittle.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/订单/orderBody.css"/>
+	</head>
+	<body>
+		<div id="orderBox">
+			<div id="headOredr"><p id="headOredr-p1">订单 <span class="headOrder1">请谨防钓鱼网站或诈骗电话，</span><a id="more" class="headOrder1" href="#">了解更多></a></p> </div>
+			<div id="status">
+				<div id="status-up">
+					<div  id="up-left"	>
+						<ul id="status-ul">
+							<li> <input type="button" name="status-all" id="status-all" class="status-btn" value="全部有效订单" /></li>
+							<li > 
+								<span class="status-li">	
+								|
+								</span>
+							</li>
+							<li> <input type="button" name="status-unpay" id="status-unpay" class="status-btn" value="未支付" /></li>
+							<li > 
+								<span class="status-li">	
+								|
+								</span>
+							</li>
+							<li> <input type="button" name="status-noSend" id="status-Send" class="status-btn" value="已发货" /></li>
+							<li > 
+								<span class="status-li">	
+								|
+								</span>
+							</li>
+							<li> <input type="button" name="status-Send" id="status-noSend" class="status-btn" value="未发货" /></li>
+							<li > 
+								<span class="status-li">	
+								|
+								</span>
+							</li>
+							<li> <input type="button" name="status-invalid" id="status-invalid" class="status-btn" value="无效订单" /></li>
+						</ul>
+					</div>
+					<form>
+						<div id="up-right">
+							<input type="text" name="search-text" id="search-text" value="输入商品名称、商品编号、订单号" />
+							<input type="button" name="search-btn" id="search-btn" value="" style="background: url(../img/s-1.png);"/>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div id="order-all" class="order" >
+				<table class="order-table">
+					<tr class="order-tr1">
+						<td class="order-td1">
+							<span class="order-span1">已发货</span><br />
+							<span class="order-span2">
+								2016年11月09日&nbsp; 23:20&nbsp;|&nbsp;冯正民&nbsp;|&nbsp;订单号：
+								<a class="order-a1" href="orderDetails.html">1161109748801453</a>	&nbsp;|&nbsp;在线支付 
+							</span>   
+							<div class="order-div1"><span class="order-span3"> 订单金额： <span class="order-span4">1799.00</span>元</span>	</div>
+						</td>				
+					</tr>
+					<tr>
+						<td class="order-td1">
+							<input type="button" name="details1" class="details" id="details1" value="订单详情" />
+							<div class="order-div2">
+								<a class="order-a1" href="../商品详情/commodityDetails.html">
+									<span class="order-span5">
+										小米手机5 全网通高配版 金色 64GB
+									</span>
+									<img class="order-img1" align="top"  src="../img/td-1.jpg"/> 
+								</a>
+								&nbsp;1799元 × 1
+							</div>	 
+						</td>				
+					</tr>
+				</table>
+				<table class="order-table" id="nopay">
+					<tr class="order-tr1" class="nopay">
+						<td class="order-td1">
+							<span class="order-span1">未支付</span><br />
+							<span class="order-span2">
+								2017年05月15日 &nbsp;14:24&nbsp;|&nbsp;冯正民&nbsp;|&nbsp;订单号：
+								<a class="order-a1" href="#"> 1170515818002116</a>	&nbsp;|&nbsp;在线支付
+							</span>   
+							<div class="order-div1"><span class="order-span3"> 订单金额： <span class="order-span4">149.00</span>元</span>	</div>
+						</td>				
+					</tr>
+					<tr>
+						<td class="order-td1" >
+							<input type="button" name="details2" class="details" id="details2" value="订单详情" />
+							<div class="order-div2">
+								<a class="order-a1" href="#">
+									<span class="order-span5">
+										小米手环2 黑色 
+									</span>
+									<img class="order-img1" align="top"  src="../img/td-2.jpg"/> 
+								</a>
+								&nbsp;149元 × 1
+							</div>
+							<input type="button" name="goPay1" class="goPay" id="goPay1" value="立即支付" />
+						</td>				
+					</tr>
+				</table>
+				<table class="order-table">
+					<tr class="order-tr1" class="nopay">
+						<td class="order-td1">
+							<span class="order-span1">未发货</span><br />
+							<span class="order-span2">
+								2017年05月1日 &nbsp;4:24&nbsp;|&nbsp;冯正民&nbsp;|&nbsp;订单号：
+								<a class="order-a1" href="#"> 1170515817002043</a>	&nbsp;|&nbsp;在线支付
+							</span>   
+							<div class="order-div1"><span class="order-span3"> 订单金额： <span class="order-span4">3599.00</span>元</span>	</div>
+						</td>				
+					</tr>
+					<tr>
+						<td class="order-td1" >
+							<input type="button" name="details3" class="details" id="details3" value="订单详情" />
+							<div class="order-div2">
+								<a class="order-a1" href="#">
+									<span class="order-span5">
+										小米笔记本Air 银色
+									</span>
+									<img class="order-img1" align="top"  src="../img/td-3.jpg"/> 
+								</a>
+								&nbsp;3599元 × 1
+							</div>
+						</td>				
+					</tr>
+				</table>
+			</div>		
+			<div id="order-unpay" class="order">
+				
+				<table class="order-table">
+					<tr class="order-tr1" class="nopay">
+						<td class="order-td1">
+							<span class="order-span1">未支付</span><br />
+							<span class="order-span2">
+								2017年05月15日 &nbsp;14:24&nbsp;|&nbsp;冯正民&nbsp;|&nbsp;订单号：
+								<a class="order-a1" href="#"> 1170515818002116</a>	&nbsp;|&nbsp;在线支付
+							</span>   
+							<div class="order-div1"><span class="order-span3"> 订单金额： <span class="order-span4">149.00</span>元</span>	</div>
+						</td>				
+					</tr>
+					<tr>
+						<td class="order-td1" >
+							<input type="button" name="details4" class="details" id="details4" value="订单详情" />
+							<div class="order-div2">
+								<a class="order-a1" href="#">
+									<span class="order-span5">
+										小米手环2 黑色 
+									</span>
+									<img class="order-img1" align="top"  src="../img/td-2.jpg"/> 
+								</a>
+								&nbsp;149元 × 1
+							</div>
+							<input type="button" name="goPay1" class="goPay" id="goPay1" value="立即支付" />
+						</td>				
+					</tr>
+				</table>			
+			</div>	
+			<div id="order-Send" class="order">
+				<table class="order-table">
+					<tr class="order-tr1">
+						<td class="order-td1">
+							<span class="order-span1">已发货</span><br />
+							<span class="order-span2">
+								2016年11月09日&nbsp; 23:20&nbsp;|&nbsp;冯正民&nbsp;|&nbsp;订单号：
+								<a class="order-a1" href="orderDetails.html">1161109748801453</a>	&nbsp;|&nbsp;在线支付 
+							</span>   
+							<div class="order-div1"><span class="order-span3"> 订单金额： <span class="order-span4">1799.00</span>元</span>	</div>
+						</td>				
+					</tr>
+					<tr>
+						<td class="order-td1">
+							<input type="button" name="details5" class="details" id="details5" value="订单详情" />
+							<div class="order-div2">
+								<a class="order-a1" href="../商品详情/commodityDetails.html">
+									<span class="order-span5">
+										小米手机5 全网通高配版 金色 64GB
+									</span>
+									<img class="order-img1" align="top"  src="../img/td-1.jpg"/> 
+								</a>
+								&nbsp;1799元 × 1
+							</div>	 
+						</td>				
+					</tr>
+				</table>
+			</div>
+			<div id="order-noSend" class="order">
+				<table class="order-table">
+					<tr class="order-tr1" class="nopay">
+						<td class="order-td1">
+							<span class="order-span1">未发货</span><br />
+							<span class="order-span2">
+								2017年05月1日 &nbsp;4:24&nbsp;|&nbsp;冯正民&nbsp;|&nbsp;订单号：
+								<a class="order-a1" href="#"> 1170515817002043</a>	&nbsp;|&nbsp;在线支付
+							</span>   
+							<div class="order-div1"><span class="order-span3"> 订单金额： <span class="order-span4">3599.00</span>元</span>	</div>
+						</td>				
+					</tr>
+					<tr>
+						<td class="order-td1" >
+							<input type="button" name="details6" class="details" id="details6" value="订单详情" />
+							<div class="order-div2">
+								<a class="order-a1" href="#">
+									<span class="order-span5">
+										小米笔记本Air 银色
+									</span>
+									<img class="order-img1" align="top" src="../img/td-3.jpg"/> 
+								</a>
+								&nbsp;3599元 × 1
+							</div>
+						</td>				
+					</tr>
+				</table>	
+			</div>
+			<div id="return-1"  >
+				<a id="return-a" href="../index.html">返回首页</a>
+			</div>
+		</div>	
+	</body>
+</html>

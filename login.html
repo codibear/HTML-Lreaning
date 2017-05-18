@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>小米账号-登录</title>
+		<link rel="icon" href="img/logo.png"/>
+		<script type="text/javascript" src="js/jquery-1.11.3.js" ></script>
+		<link type="text/css" rel="stylesheet" href="css/login.css"  />
+		<script type="text/javascript" src="js/login.js" ></script>
+	</head>
+	<body>
+		<!--总框架div-->
+		<div id="main">
+			<!--顶部插图-->
+			<img id="imgheader" src="img/loginHead.png"  />
+			<!--左侧梁朝伟插图-->
+			<img id="imgleft" src="img/loginpicture1.png" />
+			<!--右侧登录div-->
+			<div id="right">
+				<form id="form1" name="form1" method="post" action="#">
+					<table id="tabletop" align="center" cellpadding="10px">
+						<tr id="trhead">
+							<td id="tdleft" onclick="way1()" style="color: red;">账号登录</td>
+							<td id="tdright" onclick="way2()">扫码登陆</td>
+						</tr>
+						<tr class="input1" >
+							<td colspan="2"><input id="num" onblur="a()" type="text" name="手机号码/小米账号" value="手机号码/小米账号" /></td>
+						</tr>
+						<tr class="input1">
+							<td colspan="2"><input id="pwd" onblur="b()" type="password" name="密码"/></td>
+						</tr>
+						<tr class="input2">
+							<td colspan="2">
+								<span id="inform"></span>
+							</td>
+						</tr>
+						<tr class="input1">
+							<td colspan="2">
+								<input id="login0" onclick="c()" type="button" name="login" value="立即登录" />
+							</td>
+						</tr>
+						<tr class="input2">
+							<td  colspan="2">
+								<span ><a  href="注册/register.html">注册小米账号</a></span>
+							</td>
+						</tr>
+						<!--其他登录方式图片-->
+						<tr id="input3">
+							<td colspan="2">
+								<img src="img/rightfoot.png" width="100%"/>
+							</td>
+						</tr>
+					</table>
+				</form>
+			<img id="saoma" src="img/erweima.png" style="display: none;position: relative;top:-430px;left:15px;" width="380px" height="290px" />	
+			</div>
+			<img src="img/last.png" width="100%" />
+		</div>
+	</body>
+</html>

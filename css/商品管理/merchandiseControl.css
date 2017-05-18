@@ -1,0 +1,47 @@
+#detailBox{ margin: 0 auto; width: 1020px; background: #F5F5F5; border: solid #F5F5F5 10px;}
+/*管理标题*/
+a.silver{text-decoration: none;color: #333333;}
+
+#container{width: 1020px;height: 800px;background: red;margin: 0px auto;}
+/*导航按钮*/
+#header{width:1020px ;height: 135px;background: white;}
+#head-up{width: 1020px;height: 60px;background:white;}
+#header-list{width: 1020px;height: 50px;background: white;margin: 0px 0px;}
+#spanTitle{font-size: 25px;float: left;padding: 20px;color: #333333;}
+#spanDecro{font-size: 10px ; float: left;color: #F5F5F5;margin-top: 30px;}
+.ul-none{list-style: none;padding: 0px 0px;}
+.head-li{float: left;margin: 10px 30px;}
+.head-btn{font-size: 15px;color: silver;border: none;background: rgba(255,255,255,0);}
+#search{float: right;height: 50px;border: silver 1px solid;}
+#sumbit{border: 1px silver solid;width: 50px;color: #FF6700;float: right;height: 50px;margin-right: 50px;background: rgba(0,0,0,0);}
+#mer-up{ background: pink; width: 1000px; height: 40px;}
+.up-btn{ width: 100px; height: 25px; margin-left: 40px; font-size: 16.5px; margin-top: 5px;}
+#add{ margin-left:20px;}
+#hunt{ width: 190px; height: 25px; margin-left: 100px;margin-right: -40px;}
+/*主体 1表格*/
+.mer-body{ width: 1042px; height: 800px;  position: absolute; left: 33px; top: 163px; display: none;  background: #F5F5F5;}
+#mer-body1{  display: block;}
+#mer-cen{width: 980px;  }
+#mer-cen-table{ width: 990px; text-align: center; margin-left: 26.5px; border-color: #FF6700;}
+.mer-th1{ width: 150px; text-align: center; height: 15px; background-color: #FF6700; color: white; font: 14px "宋体";}
+#cen-th1{ width: 100px; height: 10px;}
+.mer-td1{height: 60px;}
+.cen-radio{ width: 20px; height: 20px; }
+.cen-check{width: 20px; height: 20px;}
+/*注释*/
+#mer-down{color: #FF0000; margin-top: 10px; margin-left: 23px; width: 980px; height: 50px; }
+#mer-page{margin-top: 20px; margin-left: 320px;}
+.page-1{ color: #FF6700; margin-left: 18px;  }
+/*主体2 添加*/
+#mer-body2{display: none;}
+#add-table{ width:980 px; margin-left: 20px; }
+.add-td1{ width: 150px; height: 20px; line-height: 30px;}
+.add-td2{ width: 400px;}
+#add-span1{ color: red;}
+.add-btn,.add-btn1{ width: 70px; }
+.add-text{ height: 60px; width: 350px;}
+#add-td3{ color: red; }
+/* 主体3 修改*/
+#mer-body3{  }
+/*主体4 查看*/
+#mer-body4{ }

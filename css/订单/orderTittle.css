@@ -1,0 +1,6 @@
+/*管理标题*/
+			#headOredr{ width: 1300px; height: 70px; }	
+			.headOrder1{  font-size: 16px ;}
+			#headOredr-p1{ font-size: 33px; color: #5B5C5E; margin-top: 25px; margin-left: 20px;}
+			#more{ color: #5B5C5E; text-decoration: none;}
+			#more:hover{ text-decoration: underline;}
